@@ -1,0 +1,15 @@
+Finally, we're back in business!
+
+What are we making again?
+
+A mantra app of sorts. It is activated the fist time after sleep when the user equips his watch or accrues activity on his phone. It shows a list of important things to remember (designated by the user) and then intermittently reminds the user of certain list entries until the user goes to bed.
+
+When opened (watch or iOS), the user will be presented with an editable list of messages. When paired with an iPhone, the watch will gather message data from the iPhone and store it
+
+
+What happens when...
+There is only a watch:	user notifications from watch, data stored on watch, editing on watch
+There is only a phone:	user notifications from phone, data stored on phone, editing on phone
+Both phone and watch:	user notifications from watch (and phone if separated), data stored on watch and phone, editing on watch and phone. Upon editing on either device, that device flags for the other device to update to its data with the timestamp for the creation of that data. In the event that both devices have an update flag and those updates conflict (like version control), use the update with the latest timestamp. Update in order of oldest to newest timestamp
+
+

@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F42B6CE24452CF900D76434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B6CD24452CF900D76434 /* AppDelegate.swift */; };
+		7F42B6D024452CF900D76434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B6CF24452CF900D76434 /* SceneDelegate.swift */; };
+		7F42B6D224452CF900D76434 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B6D124452CF900D76434 /* ContentView.swift */; };
+		7F42B6D424452CFB00D76434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B6D324452CFB00D76434 /* Assets.xcassets */; };
+		7F42B6D724452CFB00D76434 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B6D624452CFB00D76434 /* Preview Assets.xcassets */; };
+		7F42B6DA24452CFB00D76434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B6D824452CFB00D76434 /* LaunchScreen.storyboard */; };
+		7F42B6E524452CFB00D76434 /* DailyAblutionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B6E424452CFB00D76434 /* DailyAblutionsTests.swift */; };
+		7F42B6F024452CFB00D76434 /* DailyAblutionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B6EF24452CFB00D76434 /* DailyAblutionsUITests.swift */; };
+		7F42B6F524452CFB00D76434 /* DailyAblutions WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7F42B6F424452CFB00D76434 /* DailyAblutions WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7F42B6FB24452CFB00D76434 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B6F924452CFB00D76434 /* Interface.storyboard */; };
+		7F42B6FD24452CFC00D76434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B6FC24452CFC00D76434 /* Assets.xcassets */; };
+		7F42B70424452CFC00D76434 /* DailyAblutions WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F42B70324452CFC00D76434 /* DailyAblutions WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7F42B70924452CFC00D76434 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B70824452CFC00D76434 /* ContentView.swift */; };
+		7F42B70B24452CFC00D76434 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B70A24452CFC00D76434 /* HostingController.swift */; };
+		7F42B70D24452CFC00D76434 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B70C24452CFC00D76434 /* ExtensionDelegate.swift */; };
+		7F42B70F24452CFC00D76434 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B70E24452CFC00D76434 /* NotificationController.swift */; };
+		7F42B71124452CFC00D76434 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B71024452CFC00D76434 /* NotificationView.swift */; };
+		7F42B71324452CFC00D76434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B71224452CFC00D76434 /* Assets.xcassets */; };
+		7F42B71624452CFC00D76434 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B71524452CFC00D76434 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F42B6E124452CFB00D76434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F42B6C224452CF900D76434 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F42B6C924452CF900D76434;
+			remoteInfo = DailyAblutions;
+		};
+		7F42B6EC24452CFB00D76434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F42B6C224452CF900D76434 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F42B6C924452CF900D76434;
+			remoteInfo = DailyAblutions;
+		};
+		7F42B6F624452CFB00D76434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F42B6C224452CF900D76434 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F42B6F324452CFB00D76434;
+			remoteInfo = "DailyAblutions WatchKit App";
+		};
+		7F42B70524452CFC00D76434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F42B6C224452CF900D76434 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F42B70224452CFC00D76434;
+			remoteInfo = "DailyAblutions WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F42B71E24452CFC00D76434 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7F42B70424452CFC00D76434 /* DailyAblutions WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B72224452CFC00D76434 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7F42B6F524452CFB00D76434 /* DailyAblutions WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F42B6CA24452CF900D76434 /* DailyAblutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyAblutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F42B6CD24452CF900D76434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F42B6CF24452CF900D76434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F42B6D124452CF900D76434 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F42B6D324452CFB00D76434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F42B6D624452CFB00D76434 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F42B6D924452CFB00D76434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F42B6DB24452CFB00D76434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F42B6E024452CFB00D76434 /* DailyAblutionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyAblutionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F42B6E424452CFB00D76434 /* DailyAblutionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAblutionsTests.swift; sourceTree = "<group>"; };
+		7F42B6E624452CFB00D76434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F42B6EB24452CFB00D76434 /* DailyAblutionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyAblutionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F42B6EF24452CFB00D76434 /* DailyAblutionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAblutionsUITests.swift; sourceTree = "<group>"; };
+		7F42B6F124452CFB00D76434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F42B6F424452CFB00D76434 /* DailyAblutions WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DailyAblutions WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F42B6FA24452CFB00D76434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7F42B6FC24452CFC00D76434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F42B6FE24452CFC00D76434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F42B70324452CFC00D76434 /* DailyAblutions WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DailyAblutions WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F42B70824452CFC00D76434 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F42B70A24452CFC00D76434 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		7F42B70C24452CFC00D76434 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7F42B70E24452CFC00D76434 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7F42B71024452CFC00D76434 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		7F42B71224452CFC00D76434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F42B71524452CFC00D76434 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F42B71724452CFC00D76434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F42B71824452CFC00D76434 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F42B6C724452CF900D76434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B6DD24452CFB00D76434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B6E824452CFB00D76434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B70024452CFC00D76434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F42B6C124452CF900D76434 = {
+			isa = PBXGroup;
+			children = (
+				7F42B6CC24452CF900D76434 /* DailyAblutions */,
+				7F42B6E324452CFB00D76434 /* DailyAblutionsTests */,
+				7F42B6EE24452CFB00D76434 /* DailyAblutionsUITests */,
+				7F42B6F824452CFB00D76434 /* DailyAblutions WatchKit App */,
+				7F42B70724452CFC00D76434 /* DailyAblutions WatchKit Extension */,
+				7F42B6CB24452CF900D76434 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F42B6CB24452CF900D76434 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F42B6CA24452CF900D76434 /* DailyAblutions.app */,
+				7F42B6E024452CFB00D76434 /* DailyAblutionsTests.xctest */,
+				7F42B6EB24452CFB00D76434 /* DailyAblutionsUITests.xctest */,
+				7F42B6F424452CFB00D76434 /* DailyAblutions WatchKit App.app */,
+				7F42B70324452CFC00D76434 /* DailyAblutions WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F42B6CC24452CF900D76434 /* DailyAblutions */ = {
+			isa = PBXGroup;
+			children = (
+				7F42B6CD24452CF900D76434 /* AppDelegate.swift */,
+				7F42B6CF24452CF900D76434 /* SceneDelegate.swift */,
+				7F42B6D124452CF900D76434 /* ContentView.swift */,
+				7F42B6D324452CFB00D76434 /* Assets.xcassets */,
+				7F42B6D824452CFB00D76434 /* LaunchScreen.storyboard */,
+				7F42B6DB24452CFB00D76434 /* Info.plist */,
+				7F42B6D524452CFB00D76434 /* Preview Content */,
+			);
+			path = DailyAblutions;
+			sourceTree = "<group>";
+		};
+		7F42B6D524452CFB00D76434 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F42B6D624452CFB00D76434 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F42B6E324452CFB00D76434 /* DailyAblutionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F42B6E424452CFB00D76434 /* DailyAblutionsTests.swift */,
+				7F42B6E624452CFB00D76434 /* Info.plist */,
+			);
+			path = DailyAblutionsTests;
+			sourceTree = "<group>";
+		};
+		7F42B6EE24452CFB00D76434 /* DailyAblutionsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F42B6EF24452CFB00D76434 /* DailyAblutionsUITests.swift */,
+				7F42B6F124452CFB00D76434 /* Info.plist */,
+			);
+			path = DailyAblutionsUITests;
+			sourceTree = "<group>";
+		};
+		7F42B6F824452CFB00D76434 /* DailyAblutions WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7F42B6F924452CFB00D76434 /* Interface.storyboard */,
+				7F42B6FC24452CFC00D76434 /* Assets.xcassets */,
+				7F42B6FE24452CFC00D76434 /* Info.plist */,
+			);
+			path = "DailyAblutions WatchKit App";
+			sourceTree = "<group>";
+		};
+		7F42B70724452CFC00D76434 /* DailyAblutions WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7F42B70824452CFC00D76434 /* ContentView.swift */,
+				7F42B70A24452CFC00D76434 /* HostingController.swift */,
+				7F42B70C24452CFC00D76434 /* ExtensionDelegate.swift */,
+				7F42B70E24452CFC00D76434 /* NotificationController.swift */,
+				7F42B71024452CFC00D76434 /* NotificationView.swift */,
+				7F42B71224452CFC00D76434 /* Assets.xcassets */,
+				7F42B71724452CFC00D76434 /* Info.plist */,
+				7F42B71824452CFC00D76434 /* PushNotificationPayload.apns */,
+				7F42B71424452CFC00D76434 /* Preview Content */,
+			);
+			path = "DailyAblutions WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7F42B71424452CFC00D76434 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F42B71524452CFC00D76434 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F42B6C924452CF900D76434 /* DailyAblutions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F42B72324452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutions" */;
+			buildPhases = (
+				7F42B6C624452CF900D76434 /* Sources */,
+				7F42B6C724452CF900D76434 /* Frameworks */,
+				7F42B6C824452CF900D76434 /* Resources */,
+				7F42B72224452CFC00D76434 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F42B6F724452CFB00D76434 /* PBXTargetDependency */,
+			);
+			name = DailyAblutions;
+			productName = DailyAblutions;
+			productReference = 7F42B6CA24452CF900D76434 /* DailyAblutions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F42B6DF24452CFB00D76434 /* DailyAblutionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F42B72624452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutionsTests" */;
+			buildPhases = (
+				7F42B6DC24452CFB00D76434 /* Sources */,
+				7F42B6DD24452CFB00D76434 /* Frameworks */,
+				7F42B6DE24452CFB00D76434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F42B6E224452CFB00D76434 /* PBXTargetDependency */,
+			);
+			name = DailyAblutionsTests;
+			productName = DailyAblutionsTests;
+			productReference = 7F42B6E024452CFB00D76434 /* DailyAblutionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F42B6EA24452CFB00D76434 /* DailyAblutionsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F42B72924452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutionsUITests" */;
+			buildPhases = (
+				7F42B6E724452CFB00D76434 /* Sources */,
+				7F42B6E824452CFB00D76434 /* Frameworks */,
+				7F42B6E924452CFB00D76434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F42B6ED24452CFB00D76434 /* PBXTargetDependency */,
+			);
+			name = DailyAblutionsUITests;
+			productName = DailyAblutionsUITests;
+			productReference = 7F42B6EB24452CFB00D76434 /* DailyAblutionsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7F42B6F324452CFB00D76434 /* DailyAblutions WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F42B71F24452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutions WatchKit App" */;
+			buildPhases = (
+				7F42B6F224452CFB00D76434 /* Resources */,
+				7F42B71E24452CFC00D76434 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F42B70624452CFC00D76434 /* PBXTargetDependency */,
+			);
+			name = "DailyAblutions WatchKit App";
+			productName = "DailyAblutions WatchKit App";
+			productReference = 7F42B6F424452CFB00D76434 /* DailyAblutions WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7F42B70224452CFC00D76434 /* DailyAblutions WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F42B71B24452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutions WatchKit Extension" */;
+			buildPhases = (
+				7F42B6FF24452CFC00D76434 /* Sources */,
+				7F42B70024452CFC00D76434 /* Frameworks */,
+				7F42B70124452CFC00D76434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DailyAblutions WatchKit Extension";
+			productName = "DailyAblutions WatchKit Extension";
+			productReference = 7F42B70324452CFC00D76434 /* DailyAblutions WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F42B6C224452CF900D76434 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Noble Software";
+				TargetAttributes = {
+					7F42B6C924452CF900D76434 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					7F42B6DF24452CFB00D76434 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 7F42B6C924452CF900D76434;
+					};
+					7F42B6EA24452CFB00D76434 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 7F42B6C924452CF900D76434;
+					};
+					7F42B6F324452CFB00D76434 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					7F42B70224452CFC00D76434 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 7F42B6C524452CF900D76434 /* Build configuration list for PBXProject "DailyAblutions" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F42B6C124452CF900D76434;
+			productRefGroup = 7F42B6CB24452CF900D76434 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F42B6C924452CF900D76434 /* DailyAblutions */,
+				7F42B6DF24452CFB00D76434 /* DailyAblutionsTests */,
+				7F42B6EA24452CFB00D76434 /* DailyAblutionsUITests */,
+				7F42B6F324452CFB00D76434 /* DailyAblutions WatchKit App */,
+				7F42B70224452CFC00D76434 /* DailyAblutions WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F42B6C824452CF900D76434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42B6DA24452CFB00D76434 /* LaunchScreen.storyboard in Resources */,
+				7F42B6D724452CFB00D76434 /* Preview Assets.xcassets in Resources */,
+				7F42B6D424452CFB00D76434 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B6DE24452CFB00D76434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B6E924452CFB00D76434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B6F224452CFB00D76434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42B6FD24452CFC00D76434 /* Assets.xcassets in Resources */,
+				7F42B6FB24452CFB00D76434 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B70124452CFC00D76434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42B71624452CFC00D76434 /* Preview Assets.xcassets in Resources */,
+				7F42B71324452CFC00D76434 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F42B6C624452CF900D76434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42B6CE24452CF900D76434 /* AppDelegate.swift in Sources */,
+				7F42B6D024452CF900D76434 /* SceneDelegate.swift in Sources */,
+				7F42B6D224452CF900D76434 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B6DC24452CFB00D76434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42B6E524452CFB00D76434 /* DailyAblutionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B6E724452CFB00D76434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42B6F024452CFB00D76434 /* DailyAblutionsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F42B6FF24452CFC00D76434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42B70B24452CFC00D76434 /* HostingController.swift in Sources */,
+				7F42B70924452CFC00D76434 /* ContentView.swift in Sources */,
+				7F42B70F24452CFC00D76434 /* NotificationController.swift in Sources */,
+				7F42B70D24452CFC00D76434 /* ExtensionDelegate.swift in Sources */,
+				7F42B71124452CFC00D76434 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F42B6E224452CFB00D76434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F42B6C924452CF900D76434 /* DailyAblutions */;
+			targetProxy = 7F42B6E124452CFB00D76434 /* PBXContainerItemProxy */;
+		};
+		7F42B6ED24452CFB00D76434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F42B6C924452CF900D76434 /* DailyAblutions */;
+			targetProxy = 7F42B6EC24452CFB00D76434 /* PBXContainerItemProxy */;
+		};
+		7F42B6F724452CFB00D76434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F42B6F324452CFB00D76434 /* DailyAblutions WatchKit App */;
+			targetProxy = 7F42B6F624452CFB00D76434 /* PBXContainerItemProxy */;
+		};
+		7F42B70624452CFC00D76434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F42B70224452CFC00D76434 /* DailyAblutions WatchKit Extension */;
+			targetProxy = 7F42B70524452CFC00D76434 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F42B6D824452CFB00D76434 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F42B6D924452CFB00D76434 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7F42B6F924452CFB00D76434 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F42B6FA24452CFB00D76434 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F42B71924452CFC00D76434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F42B71A24452CFC00D76434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F42B71C24452CFC00D76434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyAblutions WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DailyAblutions WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutions.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		7F42B71D24452CFC00D76434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyAblutions WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DailyAblutions WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutions.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		7F42B72024452CFC00D76434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				IBSC_MODULE = DailyAblutions_WatchKit_Extension;
+				INFOPLIST_FILE = "DailyAblutions WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutions.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		7F42B72124452CFC00D76434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				IBSC_MODULE = DailyAblutions_WatchKit_Extension;
+				INFOPLIST_FILE = "DailyAblutions WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutions.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		7F42B72424452CFC00D76434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyAblutions/Preview Content\"";
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DailyAblutions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F42B72524452CFC00D76434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyAblutions/Preview Content\"";
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DailyAblutions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F42B72724452CFC00D76434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				INFOPLIST_FILE = DailyAblutionsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyAblutions.app/DailyAblutions";
+			};
+			name = Debug;
+		};
+		7F42B72824452CFC00D76434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				INFOPLIST_FILE = DailyAblutionsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyAblutions.app/DailyAblutions";
+			};
+			name = Release;
+		};
+		7F42B72A24452CFC00D76434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				INFOPLIST_FILE = DailyAblutionsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyAblutions;
+			};
+			name = Debug;
+		};
+		7F42B72B24452CFC00D76434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTF4LR9V8U;
+				INFOPLIST_FILE = DailyAblutionsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noblesoftware.DailyAblutionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DailyAblutions;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F42B6C524452CF900D76434 /* Build configuration list for PBXProject "DailyAblutions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F42B71924452CFC00D76434 /* Debug */,
+				7F42B71A24452CFC00D76434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F42B71B24452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutions WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F42B71C24452CFC00D76434 /* Debug */,
+				7F42B71D24452CFC00D76434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F42B71F24452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutions WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F42B72024452CFC00D76434 /* Debug */,
+				7F42B72124452CFC00D76434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F42B72324452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F42B72424452CFC00D76434 /* Debug */,
+				7F42B72524452CFC00D76434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F42B72624452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F42B72724452CFC00D76434 /* Debug */,
+				7F42B72824452CFC00D76434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F42B72924452CFC00D76434 /* Build configuration list for PBXNativeTarget "DailyAblutionsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F42B72A24452CFC00D76434 /* Debug */,
+				7F42B72B24452CFC00D76434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F42B6C224452CF900D76434 /* Project object */;
+}
