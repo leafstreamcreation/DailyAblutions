@@ -1,6 +1,7 @@
 
 -Requirements Document
-	Outline what the 
+	Outline what I need DailyAblutions to do
 
 -Design Document
+	Outline how I'm building DailyAblutions
 
