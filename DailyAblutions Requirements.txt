@@ -7,18 +7,20 @@ The problem: waking up each day and having to remind myself of the ideas, tasks,
 
 A possible solution: coach myself at all points in the day, making these concepts a part of my daily environment. Repeating them like mantras so that they remain at the forefront of my attention. That way I remain focused. Undistracted. This allows me to check in with myself and recenter on my goals if I stray. I can double down by thinking about how I will address (or have addressed) each concept satisfactorily for the day.
 
-Do I want to manipulate the order that I receive the reminders? My initial reaction is no. While there may be variation in their relative importance, all of the mantras and reminders should be non-negotiable. The only consideration is ensuring that all mantras are shown evenly over time. So I should implement a randomized rotation - this way every day isn't exactly the same and I don't reduce my lifestyle to a static routine.
+Do I want to manipulate the order that I receive the reminders? My initial reaction is no. While there may be variation in their relative importance, all of the mantras and reminders should be non-negotiable. The only consideration is ensuring that all mantras are shown evenly over time. So I should implement a randomized rotation - this way every day isn't exactly the same and I don't reduce my lifestyle to a static routine, yet over time all of my most important goals are given equal attention.
 
 Do I want to distinguish between different kinds of reminders? I think yes. I can think of two classes already: tasks and mantras. A task is something like "do laundry": it has well defined parameters for completion. A mantra (like "not a complete") does not. The objective of a mantra seems to be maintaining fitness or wellness; it requires consistent practice until it becomes endemic. In short, it seems that tasks are about shaping my environment while mantras are about shaping myself.
 
-Every day I want to see my tasks in the morning. Completing tasks will alter my evironment favorably, and the more favorable my environment, the more favorable my own behavior will be. Throughout the day I want reminders of both my tasks and my mantras.
+Every day I want to see my tasks in the morning. Completing tasks will alter my environment favorably, and the more favorable my environment, the more favorable my own behavior will be. Throughout the day I want reminders of both my tasks and my mantras.
 
 Here's how I can set up this solution:
 
-1.) The Wake Up:
+1) The Wake Up:
 	Upon wake up before I do anything, the app will remind me of all of my tasks.
 
-2.) The Day:
-	15 minutes after the wake up, the app will shuffle all of the tasks and mantras and show them to me. The day will be divided evenly into sections; the number of sections will equal the total number of tasks and mantras. In each section, the app will generate a reminder for the corresponding task or mantra and send it to me at a random timestamp within that section (this way I don't anticipate the notifications).
+2) The Day:
+	15 minutes after the wake up, the app will shuffle all of the tasks and mantras and show them to me in sequence over the course of the day. The day will be divided evenly into sections; the number of sections will equal the total number of tasks and mantras. In each section, the app will generate a reminder for the corresponding task or mantra and send it to me at a random time within that section (this way I don't anticipate the notifications). If the reminder shown is a task, the user will have the option to flag it for completion and stop receiving notifications for it.
 
-With this behavior, all else I should need is for the app to allow me to edit, add, and delete the tasks and mantras (and of course, differentiate between them)
+With this behavior, a few other things I should need are for the app to allow me to edit, add, and delete the tasks and mantras (and of course, differentiate between them)
+
+I also want the user to be able to write personalized notification messages to themselves - the actual reminder will be be hidden to user to entice the user to see what it is. A default set of notification messages will be provided. For example: "Hey Derek, I love you. Please take a moment for yourself and reflect on something important" for notifications throughout the day, and "Good morning, Me! Let's make today a smashing success. Here's what you wanted to work on today" for the morning messages. The application would need a feature to add, edit, and delete these messages too. With these sets established, the app will randomly choose the notification messages for the wake up and daytime notifications (chosen from their corresponding sets).

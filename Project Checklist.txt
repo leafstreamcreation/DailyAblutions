@@ -5,3 +5,13 @@
 -Design Document
 	Outline how I'm building DailyAblutions
 
+-Get clear with App Store review guidelines (see reading list in Safari)
+	Questions:
+		Apple Developer Program?
+		Human Interface Guidelines?
+		Universal apps?
+		Sandboxing?
+		Are mantra apps too saturated?
+		Will my app be likely to be rejected for dependency on notifications?
+
+	All other concerns about the App Store seem settled

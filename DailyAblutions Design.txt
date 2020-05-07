@@ -1,3 +1,4 @@
+
 Finally, we're back in business!
 
 What are we making again?
@@ -13,3 +14,8 @@ There is only a phone:	user notifications from phone, data stored on phone, edit
 Both phone and watch:	user notifications from watch (and phone if separated), data stored on watch and phone, editing on watch and phone. Upon editing on either device, that device flags for the other device to update to its data with the timestamp for the creation of that data. In the event that both devices have an update flag and those updates conflict (like version control), use the update with the latest timestamp. Update in order of oldest to newest timestamp
 
 
+So let's hash this out:
+
+This will be a notification dependent app. Most interaction will be done through notifications. With that in mind, it is important to recognize that the user has two methods of interacting with the app's notifications: summoning the app and entering the detail view.
+
+1) The Edit Screen
