@@ -19,3 +19,4 @@ So let's hash this out:
 This will be a notification dependent app. Most interaction will be done through notifications. With that in mind, it is important to recognize that the user has two methods of interacting with the app's notifications: summoning the app and entering the detail view.
 
 1) The Edit Screen
+	A few notes to keep in mind first: this is the screen the user sees upon launching the app. The app's only function is to send notifications

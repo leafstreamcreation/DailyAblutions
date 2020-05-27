@@ -2,6 +2,7 @@
 Requirements Specification for DailyAblutions
 
 
+
 The problem: waking up each day and having to remind myself of the ideas, tasks, and philosophies that are most important to me; forgetting them over the course of the day. I get distracted by the chaos of life and at the end of the day things get done, but are they what I wanted to get done? I want to shape my environment because my environment shapes me.
 
 
@@ -24,3 +25,23 @@ Here's how I can set up this solution:
 With this behavior, a few other things I should need are for the app to allow me to edit, add, and delete the tasks and mantras (and of course, differentiate between them)
 
 I also want the user to be able to write personalized notification messages to themselves - the actual reminder will be be hidden to user to entice the user to see what it is. A default set of notification messages will be provided. For example: "Hey Derek, I love you. Please take a moment for yourself and reflect on something important" for notifications throughout the day, and "Good morning, Me! Let's make today a smashing success. Here's what you wanted to work on today" for the morning messages. The application would need a feature to add, edit, and delete these messages too. With these sets established, the app will randomly choose the notification messages for the wake up and daytime notifications (chosen from their corresponding sets).
+
+
+
+
+
+
+After some additional thinking, there are three more features that would be good to add:
+
+1) Checkups:
+	Periodic reminders - much like the user's own reminders - that encourage the user to specifically evaluate a reminder they set for themself. Normal notifications encourage the user to reflect on a concept, and this implicitly creates space for the user to meta-evaluate that concept's efficacy. Adding this feature bakes mantra and task curation into the behavior of the app. This helps the user maintain steady growth and remove deprecated (and potentially harmful) notifications.
+
+	-how many checkups a day should be allowed?
+		Once a day is fine (but why throttle?)
+	-how should checkups be scheduled, and should the user be able to decide?
+
+2) Snooze after:
+	Sets a time where the app stops sending notifications to the user until the user wakes up again
+
+
+What happens when the user misses a notification? Checkups shouldn't be missable, and the app still needs to function in some way if the user turns off notifications
