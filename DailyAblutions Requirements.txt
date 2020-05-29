@@ -31,17 +31,23 @@ I also want the user to be able to write personalized notification messages to t
 
 
 
-After some additional thinking, there are three more features that would be good to add:
+After some additional thinking, there are four more features that would be good to add:
 
 1) Checkups:
 	Periodic reminders - much like the user's own reminders - that encourage the user to specifically evaluate a reminder they set for themself. Normal notifications encourage the user to reflect on a concept, and this implicitly creates space for the user to meta-evaluate that concept's efficacy. Adding this feature bakes mantra and task curation into the behavior of the app. This helps the user maintain steady growth and remove deprecated (and potentially harmful) notifications.
 
 	-how many checkups a day should be allowed?
-		Once a day is fine (but why throttle?)
+		Once a day is fine.
 	-how should checkups be scheduled, and should the user be able to decide?
 
 2) Snooze after:
-	Sets a time where the app stops sending notifications to the user until the user wakes up again
+	Sets a time where the app stops sending notifications to the user until the user wakes up again. If the current time is less than 8 hours past the user's Snooze After time, the app does not generate notifications. After 8 hours, the notifications are reactivated once the user is awake and interacts with their device.
 
+3) Notification accumulator:
+	Checkups shouldn't be missable, and the app still needs to function in some way if the user turns off notifications. Let's set up another screen to accumulate all of the notifications the user has missed throughout the day. The first time the user interacts with their phone daily, all notifications except checkups will be erased.
 
-What happens when the user misses a notification? Checkups shouldn't be missable, and the app still needs to function in some way if the user turns off notifications
+	-should the accumulated notifications be shown individually, or simultaneously in a list?
+		Simultaneously in a list seems most flexible
+
+4) Call to action:
+	If the user goes a certain amount of time (maybe let them decide) without viewing any notifications, then the app should intervene and appeal to the user to not give up.
