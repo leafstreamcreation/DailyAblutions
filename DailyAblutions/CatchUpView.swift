@@ -1,5 +1,5 @@
 //
-//  NotificationScreen.swift
+//  CatchUpView.swift
 //  DailyAblutions
 //
 //  Created by Derek Noble on 4/13/20.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct NotificationScreen: View {
+struct CatchUpView: View {
     var body: some View {
         VStack {
             Button(action: {}) {
@@ -38,7 +38,7 @@ struct NotificationScreen: View {
 
 struct NotificationScreen_Previews: PreviewProvider {
     static var previews: some View {
-        NotificationScreen()
+        CatchUpView()
     }
 }
 

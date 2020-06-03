@@ -15,3 +15,11 @@
 		Will my app be likely to be rejected for dependency on notifications?
 
 	All other concerns about the App Store seem settled
+
+Don't neglect AGILE methodology
+-Weekly Sprints
+
+Week 1 Sprint
+-Build the mantra and task list screen
+	-need sample strings
+-Build tests for the Mantra and Task classes
