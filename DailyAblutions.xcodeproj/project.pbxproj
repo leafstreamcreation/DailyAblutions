@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652AA29F2488402E00088178 /* DailyAblutionsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652AA29E2488402E00088178 /* DailyAblutionsHomeView.swift */; };
 		7F42B6CE24452CF900D76434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B6CD24452CF900D76434 /* AppDelegate.swift */; };
 		7F42B6D024452CF900D76434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B6CF24452CF900D76434 /* SceneDelegate.swift */; };
 		7F42B6D224452CF900D76434 /* CatchUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42B6D124452CF900D76434 /* CatchUpView.swift */; };
@@ -27,7 +28,7 @@
 		7F42B71324452CFC00D76434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B71224452CFC00D76434 /* Assets.xcassets */; };
 		7F42B71624452CFC00D76434 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F42B71524452CFC00D76434 /* Preview Assets.xcassets */; };
 		7F4F0AEE2481AE7B00D1C44B /* NotificationSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F0AED2481AE7B00D1C44B /* NotificationSampleData.swift */; };
-		7FDF10002481A247008C93DB /* MantraHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF0FFF2481A247008C93DB /* MantraHomeView.swift */; };
+		7FDF10002481A247008C93DB /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF0FFF2481A247008C93DB /* ReminderListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		652AA29E2488402E00088178 /* DailyAblutionsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAblutionsHomeView.swift; sourceTree = "<group>"; };
 		7F42B6CA24452CF900D76434 /* DailyAblutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyAblutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F42B6CD24452CF900D76434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F42B6CF24452CF900D76434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 		7F42B71724452CFC00D76434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F42B71824452CFC00D76434 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		7F4F0AED2481AE7B00D1C44B /* NotificationSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSampleData.swift; sourceTree = "<group>"; };
-		7FDF0FFF2481A247008C93DB /* MantraHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MantraHomeView.swift; sourceTree = "<group>"; };
+		7FDF0FFF2481A247008C93DB /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +183,7 @@
 				7F42B6CD24452CF900D76434 /* AppDelegate.swift */,
 				7F42B6CF24452CF900D76434 /* SceneDelegate.swift */,
 				7F42B6D124452CF900D76434 /* CatchUpView.swift */,
-				7FDF0FFF2481A247008C93DB /* MantraHomeView.swift */,
+				7FDF0FFF2481A247008C93DB /* ReminderListView.swift */,
 				7FDF0FFE2481A1B2008C93DB /* Models */,
 				7FDF0FFD2481A134008C93DB /* Supporting Views */,
 				7F42B6D324452CFB00D76434 /* Assets.xcassets */,
@@ -189,6 +191,7 @@
 				7F42B6D824452CFB00D76434 /* LaunchScreen.storyboard */,
 				7F42B6DB24452CFB00D76434 /* Info.plist */,
 				7F42B6D524452CFB00D76434 /* Preview Content */,
+				652AA29E2488402E00088178 /* DailyAblutionsHomeView.swift */,
 			);
 			path = DailyAblutions;
 			sourceTree = "<group>";
@@ -471,7 +474,8 @@
 			files = (
 				7F4F0AEE2481AE7B00D1C44B /* NotificationSampleData.swift in Sources */,
 				7F42B6CE24452CF900D76434 /* AppDelegate.swift in Sources */,
-				7FDF10002481A247008C93DB /* MantraHomeView.swift in Sources */,
+				7FDF10002481A247008C93DB /* ReminderListView.swift in Sources */,
+				652AA29F2488402E00088178 /* DailyAblutionsHomeView.swift in Sources */,
 				7F42B6D024452CF900D76434 /* SceneDelegate.swift in Sources */,
 				7F42B6D224452CF900D76434 /* CatchUpView.swift in Sources */,
 			);

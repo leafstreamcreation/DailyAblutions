@@ -1,5 +1,5 @@
 //
-//  MantraHomeView.swift
+//  ReminderListView.swift
 //  DailyAblutions
 //
 //  Created by Derek Noble on 5/29/20.
@@ -8,17 +8,27 @@
 
 import SwiftUI
 
-struct MantraHomeView: View {
+struct ReminderListView: View {
     var body: some View {
         VStack {
             HStack {
-                Button(action: ) {
-                Text("New Mantra")
+                Text("Mantras")
+                    .font(.title)
+                    .padding()
+                Spacer()
+            }
+            HStack {
+                Button(action: {
+                    print("New Button Pushed")
+                }) {
+                Text("New")
                 }
                 .padding()
+                .background(Color.yellow)
                 Spacer()
                 EditButton()
                 .padding()
+                    .background(Color.yellow)
             }
             List(notificationSampleData) { sample in
                 ScrollView {
@@ -31,6 +41,6 @@ struct MantraHomeView: View {
 
 struct ReminderScreen_Previews: PreviewProvider {
     static var previews: some View {
-        MantraHomeView()
+        ReminderListView()
     }
 }
