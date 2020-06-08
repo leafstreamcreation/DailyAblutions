@@ -11,13 +11,6 @@ import SwiftUI
 struct CatchUpView: View {
     var body: some View {
         VStack {
-            Button(action: {}) {
-                Spacer()
-                Text("All Reminders")
-                    .padding(.horizontal)
-                Spacer()
-            }
-            .padding()
             HStack {
                 Text("Here's what you missed.")
                     .fontWeight(.regular)
