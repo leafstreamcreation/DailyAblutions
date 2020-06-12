@@ -19,7 +19,17 @@
 Don't neglect AGILE methodology
 -Weekly Sprints
 
+
 Week 1 Sprint
 -Build the mantra and task list screen
 	-need sample strings
 -Build tests for the Mantra and Task classes
+
+
+Week 2 Sprint
+Reflection: I almost got the tests written. Task class revised - it will not be included unless I find a good reason for it later. The Mantra and Task screens are almost done, but still require sample strings and a page view to render them.
+Updated goals:
+- Finish the page view
+- Get sample strings
+- Finish the decode init test
+- Get the app running, swiping between the catch up, mantra, and task views showing preloaded dummy data

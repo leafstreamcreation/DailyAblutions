@@ -8,15 +8,21 @@
 
 import SwiftUI
 
-struct DailyAblutionsHomeView: View {
+struct DailyAblutionsHomeView<Page: View>: View {
+    
+    var m_ViewControllers: [UIHostingController<Page>]
+    
+    init(_ views: [Page]) {
+        self.m_ViewControllers = views.map { UIHostingController(rootView: $0) }
+    }
+    
     var body: some View {
-        
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        PageViewController(m_Controllers: m_ViewControllers)
     }
 }
 
 struct DailyAblutionsHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        DailyAblutionsHomeView()
+        DailyAblutionsHomeView<CatchUpView>([CatchUpView(), CatchUpView()])
     }
 }
