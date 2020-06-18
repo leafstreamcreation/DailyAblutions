@@ -33,3 +33,15 @@ Updated goals:
 - Get sample strings
 - Finish the decode init test
 - Get the app running, swiping between the catch up, mantra, and task views showing preloaded dummy data
+
+
+Week 3 Sprint
+Reflection: I found new requirements and worked on getting the page view to render non homogeneous strings. This was a difficult week of self-discovery, so nothing else related to the app was accomplished
+Updated goals:
+- Get the page view to render non-homogeneous views
+- Get sample strings to finish the page view
+- Finish outlining the new requirements
+- Finish the decode init test for Mantra
+- Get the app running, swiping between the catch up, mantra, and task views showing preloaded dummy data
+
+
