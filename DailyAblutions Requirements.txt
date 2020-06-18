@@ -51,3 +51,13 @@ After some additional thinking, there are four more features that would be good 
 
 4) Call to action:
 	If the user goes a certain amount of time (maybe let them decide) without viewing any notifications, then the app should intervene and appeal to the user to not give up.
+
+
+
+New ideas:
+- archiving system, so that the user can save mantras and tasks for later and avoid spamming themselves
+- notes (possibly replacing the personalized message system) for each mantra and task, offering user-created additional information about the mantra or task randomly and allowing the user to scroll through other related notes & create new ones. Possibly also promote notes to new mantras?
+
+
+
+
