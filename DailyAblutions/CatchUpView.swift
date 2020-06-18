@@ -9,6 +9,10 @@
 import SwiftUI
 
 struct CatchUpView: View {
+    
+    var name: String
+    
+    
     var body: some View {
         VStack {
             HStack {
@@ -23,6 +27,7 @@ struct CatchUpView: View {
             List(notificationSampleData) { sample in
                 ScrollView {
                     Text(sample.text)
+                    Text(self.name)
                 }
             }
         }
@@ -31,7 +36,7 @@ struct CatchUpView: View {
 
 struct NotificationScreen_Previews: PreviewProvider {
     static var previews: some View {
-        CatchUpView()
+        CatchUpView(name: "Beep")
     }
 }
 

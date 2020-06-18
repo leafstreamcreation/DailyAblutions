@@ -23,6 +23,6 @@ struct DailyAblutionsHomeView<Page: View>: View {
 
 struct DailyAblutionsHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        DailyAblutionsHomeView<CatchUpView>([CatchUpView(), CatchUpView()])
+        DailyAblutionsHomeView<CatchUpView>([CatchUpView(name: "Slim"), CatchUpView(name: "Fat")])
     }
 }
