@@ -8,16 +8,16 @@
 
 import SwiftUI
 
-struct DailyAblutionsView: View {
-    var body: some View
-    
-    init(viewToWrap: View) {
-        body = viewToWrap.body
-    }
-}
-
-struct DailyAblutionsView_Previews: PreviewProvider {
-    static var previews: some View {
-        DailyAblutionsView(viewToWrap: CatchUpView(name: "DailyAblutionsView"))
-    }
-}
+//struct DailyAblutionsView: View {
+//    var body: some View
+//
+//    init(viewToWrap: View) {
+//        body = viewToWrap.body
+//    }
+//}
+//
+//struct DailyAblutionsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DailyAblutionsView(viewToWrap: CatchUpView(name: "DailyAblutionsView"))
+//    }
+//}

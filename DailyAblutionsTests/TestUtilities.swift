@@ -29,12 +29,11 @@ class TestUtilities {
 }
 
 extension Mantra {
-    convenience init(id: UInt, text: String, viewedToday: Bool) {
-        self.init()
-        m_Id = id
-        m_Text = text
-        m_ViewedToday = viewedToday
-    }
+//    convenience init(id: UInt, text: String) {
+//        self.init()
+//        m_Id = id
+//        m_Text = text
+//    }
     
     static func InstancesHaveEqualFields(_ firstMantra: Mantra, _ secondMantra: Mantra) -> Bool {
         if firstMantra.m_Id != secondMantra.m_Id {
@@ -43,10 +42,6 @@ extension Mantra {
         }
         else if firstMantra.m_Text != secondMantra.m_Text {
             print("String '\(firstMantra.m_Text)' does not equal '\(secondMantra.m_Text)'")
-            return false
-        }
-        else if firstMantra.m_ViewedToday != secondMantra.m_ViewedToday {
-            print("Bool '\(firstMantra.m_ViewedToday)' does not equal '\(secondMantra.m_ViewedToday)'")
             return false
         }
         else { return true }

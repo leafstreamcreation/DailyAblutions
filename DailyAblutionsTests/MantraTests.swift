@@ -23,22 +23,21 @@ class MantraTests: XCTestCase {
     func testEquality() throws {
         let standardId: UInt = 1
         let ignoreText = "Not a complete."
-        let ignoreViewedToday = true
         
-        let standardMantra = Mantra(id: standardId, text: ignoreText, viewedToday: ignoreViewedToday)
+        let standardMantra = Mantra(id: standardId, text: ignoreText)
         
         //same ids should be equal
-        let identicalControlMantra = Mantra(id: standardId, text: ignoreText, viewedToday: ignoreViewedToday)
+        let identicalControlMantra = Mantra(id: standardId, text: ignoreText)
         XCTAssertEqual(standardMantra, identicalControlMantra)
         
         //differing ids should be unequal
-        let differentIdControlMantra = Mantra(id: 2, text: ignoreText, viewedToday: ignoreViewedToday)
+        let differentIdControlMantra = Mantra(id: 2, text: ignoreText)
         XCTAssertNotEqual(standardMantra, differentIdControlMantra)
     }
     
     func testInits() throws {
         //init() creates a Mantra with the following fields:
-        let basicMantra = Mantra(id: 0, text: "", viewedToday: false)
+        let basicMantra = Mantra(id: 0, text: "")
         let basicTestMantra = Mantra()
         XCTAssertTrue(Mantra.InstancesHaveEqualFields(basicTestMantra, basicMantra))
         
@@ -46,7 +45,7 @@ class MantraTests: XCTestCase {
         //init(id:, text:) sets the id and text by parameter and viewedToday as false
         let customId: UInt = 3
         let customText = "You are a woke hearing impaired person"
-        let customTestMantra = Mantra(id: customId, text: customText, viewedToday: false)
+        let customTestMantra = Mantra(id: customId, text: customText)
         let customMantra = Mantra(id: customId, text: customText)
         XCTAssertTrue(Mantra.InstancesHaveEqualFields(customTestMantra, customMantra))
         
@@ -80,24 +79,24 @@ class MantraTests: XCTestCase {
     
     func testStartANewDay() throws {
         //sets a true ViewedToday to false
-        let viewedMantra = Mantra(id: 0, text: "", viewedToday: true)
+        let viewedMantra = Mantra(id: 0, text: "")
         viewedMantra.StartANewDay()
         XCTAssertFalse(viewedMantra.m_ViewedToday)
         
         //leaves a false ViewedToday unchanged
-        let unviewedMantra = Mantra(id: 0, text: "", viewedToday: false)
+        let unviewedMantra = Mantra(id: 0, text: "")
         unviewedMantra.StartANewDay()
         XCTAssertFalse(unviewedMantra.m_ViewedToday)
     }
     
     func testCheckTodayOff() throws {
         // sets a false ViewedToday to true
-        let unviewedMantra = Mantra(id: 0, text: "", viewedToday: false)
+        let unviewedMantra = Mantra(id: 0, text: "")
         unviewedMantra.CheckTodayOff()
         XCTAssertTrue(unviewedMantra.m_ViewedToday)
         
         //leaves a true ViewedToday unchanged
-        let viewedMantra = Mantra(id: 0, text: "", viewedToday: true)
+        let viewedMantra = Mantra(id: 0, text: "")
         viewedMantra.CheckTodayOff()
         XCTAssertTrue(viewedMantra.m_ViewedToday)
     }
@@ -105,14 +104,14 @@ class MantraTests: XCTestCase {
     func testChangeText() throws {
         //overwrites the text
         let newText = "This is awkward."
-        let editingMantra = Mantra(id: 0, text: "Well then", viewedToday: false)
+        let editingMantra = Mantra(id: 0, text: "Well then")
         editingMantra.ChangeText(to: newText)
         XCTAssertEqual(editingMantra.m_Text, newText)
     }
     
     func testDescription() throws {
         //description shows the mantra's properties in an organized format
-        let mantra = Mantra(id: 2, text: "Not a complete.", viewedToday: true)
+        let mantra = Mantra(id: 2, text: "Not a complete.")
         XCTAssertEqual(mantra.description, "\nId: 2\nText: Not a complete.\nViewedToday: true")
     }
     
@@ -121,7 +120,7 @@ class MantraTests: XCTestCase {
         let id: UInt = 1
         let text = "Not a complete."
         let viewedToday = false
-        let mantra = Mantra(id: id, text: text, viewedToday: viewedToday)
+        let mantra = Mantra(id: id, text: text)
         
         var mantraHasher = Hasher()
         mantra.hash(into: &mantraHasher)
@@ -139,7 +138,7 @@ class MantraTests: XCTestCase {
         let id: UInt = 1
         let text = "Not a complete."
         let viewedToday = false
-        let mantra = Mantra(id: id, text: text, viewedToday: viewedToday)
+        let mantra = Mantra(id: id, text: text)
         
         let mantraEncoder = NSKeyedArchiver(requiringSecureCoding: true)
         mantra.encode(with: mantraEncoder)

@@ -18,10 +18,9 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible {
     //MARK: Fields
     internal var m_Id: UInt
     internal var m_Text: String
-    internal var m_ViewedToday: Bool
     
     var description: String {
-        return "\nId: \(m_Id)\nText: \(m_Text)\nViewedToday: \(m_ViewedToday)"
+        return "\nId: \(m_Id)\nText: \(m_Text)"
     }
     
     var text: String {
@@ -31,11 +30,6 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible {
     
     var id: UInt {
         let copy = m_Id
-        return copy
-    }
-    
-    var viewedToday: Bool {
-        let copy = m_ViewedToday
         return copy
     }
     
@@ -51,24 +45,15 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible {
     init() {
         m_Text = ""
         m_Id = 0
-        m_ViewedToday = false
     }
     
     init(id: UInt, text: String) {
         m_Id = id
         m_Text = text
-        m_ViewedToday = false
     }
     
     
     //MARK: Functions
-    func StartANewDay() {
-        m_ViewedToday = false
-    }
-    
-    func CheckTodayOff() {
-        m_ViewedToday = true
-    }
     
     func ChangeText(to text: String) {
         m_Text = text
@@ -83,7 +68,6 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible {
     func hash(into hasher: inout Hasher) {
         hasher.combine(m_Id)
         hasher.combine(m_Text)
-        hasher.combine(m_ViewedToday)
     }
     
     
