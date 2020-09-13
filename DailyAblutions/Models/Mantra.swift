@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import UserNotifications
 
-class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible {
+class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible, Notificationable {
     
     class PropertyKeys {
         static let ID: String = CodingKeys.m_Id.rawValue
@@ -21,6 +22,13 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible {
     
     var description: String {
         return "\nId: \(m_Id)\nText: \(m_Text)"
+    }
+    
+   var notificationContent: UNMutableNotificationContent {
+        let content = UNMutableNotificationContent()
+        content.title = NSString.localizedUserNotificationString(forKey: "Mantra \(m_Id)", arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: m_Text, arguments: nil)
+        return content
     }
     
     var text: String {
@@ -62,7 +70,7 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible {
     
     //MARK: Hashable
     static func == (lhs: Mantra, rhs: Mantra) -> Bool {
-        return true
+        return lhs.m_Id == rhs.m_Id
     }
     
     func hash(into hasher: inout Hasher) {
@@ -73,10 +81,12 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible {
     
     //MARK: NSCoding
     func encode(with coder: NSCoder) {
-        
+        coder.encode(m_Id, forKey: CodingKeys.m_Id.rawValue)
+        coder.encode(m_Text, forKey: CodingKeys.m_Text.rawValue)
     }
     
     required convenience init?(coder: NSCoder) {
         self.init()
     }
+    
 }

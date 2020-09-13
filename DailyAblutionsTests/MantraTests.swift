@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import UserNotifications
 @testable import DailyAblutions
 
 class MantraTests: XCTestCase {
@@ -44,7 +45,7 @@ class MantraTests: XCTestCase {
         
         //init(id:, text:) sets the id and text by parameter and viewedToday as false
         let customId: UInt = 3
-        let customText = "You are a woke hearing impaired person"
+        let customText = "You are a woke Deaf person"
         let customTestMantra = Mantra(id: customId, text: customText)
         let customMantra = Mantra(id: customId, text: customText)
         XCTAssertTrue(Mantra.InstancesHaveEqualFields(customTestMantra, customMantra))
@@ -52,16 +53,13 @@ class MantraTests: XCTestCase {
         let differentId: UInt = 5
         let differentIdMantra = Mantra(id: differentId, text: customText)
         XCTAssertFalse(Mantra.InstancesHaveEqualFields(customTestMantra, differentIdMantra))
-        XCTAssertFalse(differentIdMantra.m_ViewedToday)
         
         let differentText = "I HAVE THE PANTS"
         let differentTextMantra = Mantra(id: customId, text: differentText)
         XCTAssertFalse(Mantra.InstancesHaveEqualFields(customTestMantra, differentTextMantra))
-        XCTAssertFalse(differentTextMantra.m_ViewedToday)
         
         let differentIdAndTextMantra = Mantra(id: differentId, text: differentText)
         XCTAssertFalse(Mantra.InstancesHaveEqualFields(customMantra, differentIdAndTextMantra))
-        XCTAssertFalse(differentIdAndTextMantra.m_ViewedToday)
         
         
         //init?(coder: ) sets the id and text by file and viewedToday as false
@@ -77,30 +75,6 @@ class MantraTests: XCTestCase {
         */
     }
     
-    func testStartANewDay() throws {
-        //sets a true ViewedToday to false
-        let viewedMantra = Mantra(id: 0, text: "")
-        viewedMantra.StartANewDay()
-        XCTAssertFalse(viewedMantra.m_ViewedToday)
-        
-        //leaves a false ViewedToday unchanged
-        let unviewedMantra = Mantra(id: 0, text: "")
-        unviewedMantra.StartANewDay()
-        XCTAssertFalse(unviewedMantra.m_ViewedToday)
-    }
-    
-    func testCheckTodayOff() throws {
-        // sets a false ViewedToday to true
-        let unviewedMantra = Mantra(id: 0, text: "")
-        unviewedMantra.CheckTodayOff()
-        XCTAssertTrue(unviewedMantra.m_ViewedToday)
-        
-        //leaves a true ViewedToday unchanged
-        let viewedMantra = Mantra(id: 0, text: "")
-        viewedMantra.CheckTodayOff()
-        XCTAssertTrue(viewedMantra.m_ViewedToday)
-    }
-    
     func testChangeText() throws {
         //overwrites the text
         let newText = "This is awkward."
@@ -112,14 +86,21 @@ class MantraTests: XCTestCase {
     func testDescription() throws {
         //description shows the mantra's properties in an organized format
         let mantra = Mantra(id: 2, text: "Not a complete.")
-        XCTAssertEqual(mantra.description, "\nId: 2\nText: Not a complete.\nViewedToday: true")
+        XCTAssertEqual(mantra.description, "\nId: 2\nText: Not a complete.")
+    }
+    
+    func testNotificationContent() throws {
+        let mantra = Mantra(id: 1, text: "Your environment shapes your behavior.")
+        let content = UNMutableNotificationContent()
+        content.title = "Mantra 1"
+        content.body = "Your environment shapes your behavior."
+        XCTAssertTrue(content == mantra.notificationContent)
     }
     
     func testHash() throws {
         //hashing combines the text, id, and ViewedToday properties
         let id: UInt = 1
         let text = "Not a complete."
-        let viewedToday = false
         let mantra = Mantra(id: id, text: text)
         
         var mantraHasher = Hasher()
@@ -128,7 +109,6 @@ class MantraTests: XCTestCase {
         var manualHasher = Hasher()
         manualHasher.combine(id)
         manualHasher.combine(text)
-        manualHasher.combine(viewedToday)
         
         XCTAssertEqual(manualHasher.finalize(), mantraHasher.finalize())
     }
@@ -137,7 +117,6 @@ class MantraTests: XCTestCase {
         //encoding includes only the id and text properties
         let id: UInt = 1
         let text = "Not a complete."
-        let viewedToday = false
         let mantra = Mantra(id: id, text: text)
         
         let mantraEncoder = NSKeyedArchiver(requiringSecureCoding: true)
@@ -145,8 +124,8 @@ class MantraTests: XCTestCase {
         mantraEncoder.finishEncoding()
         
         let manualEncoder = NSKeyedArchiver(requiringSecureCoding: true)
-        mantraEncoder.encode(id, forKey: Mantra.CodingKeys.m_Id.rawValue)
-        mantraEncoder.encode(text, forKey: Mantra.CodingKeys.m_Text.rawValue)
+        manualEncoder.encode(id, forKey: Mantra.CodingKeys.m_Id.rawValue)
+        manualEncoder.encode(text, forKey: Mantra.CodingKeys.m_Text.rawValue)
         manualEncoder.finishEncoding()
         
         XCTAssertEqual(mantraEncoder.encodedData, manualEncoder.encodedData)

@@ -21,6 +21,8 @@
 		7F94A86E248D7F0400DD0E75 /* TestDataContainer.da in Resources */ = {isa = PBXBuildFile; fileRef = 7F94A86D248D7F0400DD0E75 /* TestDataContainer.da */; };
 		7F94A875248E6DB200DD0E75 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94A874248E6DB200DD0E75 /* PageViewController.swift */; };
 		7FBA9E0C2495F12B009F335A /* DailyAblutionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBA9E0B2495F12B009F335A /* DailyAblutionsView.swift */; };
+		7FC07D30250E9C010061C73F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC07D2F250E9C000061C73F /* NotificationManager.swift */; };
+		7FC07D32250EA2470061C73F /* NotificationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC07D31250EA2470061C73F /* NotificationManagerTests.swift */; };
 		7FDF10002481A247008C93DB /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF0FFF2481A247008C93DB /* ReminderListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		7F94A871248DA59900DD0E75 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7F94A874248E6DB200DD0E75 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		7FBA9E0B2495F12B009F335A /* DailyAblutionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAblutionsView.swift; sourceTree = "<group>"; };
+		7FC07D2F250E9C000061C73F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		7FC07D31250EA2470061C73F /* NotificationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerTests.swift; sourceTree = "<group>"; };
 		7FDF0FFF2481A247008C93DB /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,7 @@
 				652AA29E2488402E00088178 /* DailyAblutionsHomeView.swift */,
 				7F94A874248E6DB200DD0E75 /* PageViewController.swift */,
 				7FBA9E0B2495F12B009F335A /* DailyAblutionsView.swift */,
+				7FC07D2F250E9C000061C73F /* NotificationManager.swift */,
 			);
 			path = DailyAblutions;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				7F42B6E624452CFB00D76434 /* Info.plist */,
 				7F94A86B248C8B8900DD0E75 /* TestUtilities.swift */,
 				7F94A86D248D7F0400DD0E75 /* TestDataContainer.da */,
+				7FC07D31250EA2470061C73F /* NotificationManagerTests.swift */,
 			);
 			path = DailyAblutionsTests;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			files = (
 				7F4F0AEE2481AE7B00D1C44B /* NotificationSampleData.swift in Sources */,
 				7F42B6CE24452CF900D76434 /* AppDelegate.swift in Sources */,
+				7FC07D30250E9C010061C73F /* NotificationManager.swift in Sources */,
 				7F94A868248B08BF00DD0E75 /* Mantra.swift in Sources */,
 				7FDF10002481A247008C93DB /* ReminderListView.swift in Sources */,
 				652AA29F2488402E00088178 /* DailyAblutionsHomeView.swift in Sources */,
@@ -287,6 +294,7 @@
 			files = (
 				7F94A86C248C8B8900DD0E75 /* TestUtilities.swift in Sources */,
 				7F42B6E524452CFB00D76434 /* MantraTests.swift in Sources */,
+				7FC07D32250EA2470061C73F /* NotificationManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

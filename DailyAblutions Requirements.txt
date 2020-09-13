@@ -54,7 +54,14 @@ After some additional thinking, there are four more features that would be good 
 
 
 
-New ideas:
+
+
+
+After EVEN MORE additional thinking, here are some more feature ideas:
+
+1) Archiving System:
+	This system answers two questions: "What happens if I have a mantra/task that isn't useful now, but will be extremely useful later?" and its follow up, ""
+
 - archiving system, so that the user can save mantras and tasks for later and avoid spamming themselves
 - notes (possibly replacing the personalized message system) for each mantra and task, offering user-created additional information about the mantra or task randomly and allowing the user to scroll through other related notes & create new ones. Possibly also promote notes to new mantras?
 
