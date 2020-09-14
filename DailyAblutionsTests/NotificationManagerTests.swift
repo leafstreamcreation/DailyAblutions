@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import UserNotifications
+@testable import DailyAblutions
 
 class NotificationManagerTests: XCTestCase {
 
@@ -21,6 +23,41 @@ class NotificationManagerTests: XCTestCase {
     func testInits() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testSchedule() throws {
+        print("Schedule test setup.")
+        let center = UNUserNotificationCenter.current()
+        center.removeAllPendingNotificationRequests()
+        
+        let mantras = [Mantra(id: 1, text: "Are you feeling full?"),
+                       Mantra(id: 2, text: "Have you planned for today?"),
+                       Mantra(id: 3, text: "ASL Word: WHAT'S UP")]
+        
+        let calendar = Calendar.current
+        let start = Date()
+        let end = calendar.date(byAdding: .hour, value: 14, to: start)!
+        let interval = DateInterval(start: start, end: end)
+        
+        let manager = NotificationManager()
+        manager.Schedule(notifications: mantras, over: interval.duration)
+        
+        center.getPendingNotificationRequests(completionHandler: {
+            (requests : [UNNotificationRequest]) in
+            print("Now the real test begins.")
+            XCTAssertEqual(mantras.count, requests.count)
+            print("The test mantras and requests have equal counts.")
+            
+            for (index, request) in requests.enumerated() {
+                //this assumes that mantras are
+                XCTAssertEqual(mantras[index].text, request.content.body)
+            }
+            print("The contents of the requests match the test mantras, and are scheduled in the correct order.")
+            print("Test Passed.")
+            
+            //to do: test that the notifications are scheduled at the right time
+        })
+        print("End of Test.")
     }
 
     func testPerformanceExample() throws {
