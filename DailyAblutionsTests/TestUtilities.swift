@@ -37,11 +37,15 @@ extension Mantra {
     
     static func InstancesHaveEqualFields(_ firstMantra: Mantra, _ secondMantra: Mantra) -> Bool {
         if firstMantra.m_Id != secondMantra.m_Id {
-            print("UInt '\(firstMantra.m_Id)' does not equal '\(secondMantra.m_Id)'")
+            print("Id '\(firstMantra.m_Id)' does not equal '\(secondMantra.m_Id)'")
+            return false
+        }
+        else if firstMantra.m_Title != secondMantra.m_Title {
+            print("Title '\(firstMantra.m_Title)' does not equal '\(secondMantra.m_Title)'")
             return false
         }
         else if firstMantra.m_Text != secondMantra.m_Text {
-            print("String '\(firstMantra.m_Text)' does not equal '\(secondMantra.m_Text)'")
+            print("Text '\(firstMantra.m_Text)' does not equal '\(secondMantra.m_Text)'")
             return false
         }
         else { return true }

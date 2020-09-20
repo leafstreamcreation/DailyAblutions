@@ -16,7 +16,7 @@ struct CatchUpView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Here's what you missed.")
+                Text("You da best!")
                     .fontWeight(.regular)
                     .foregroundColor(Color.black)
                     .multilineTextAlignment(.leading)

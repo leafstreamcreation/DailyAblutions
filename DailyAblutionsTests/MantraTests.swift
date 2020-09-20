@@ -23,43 +23,49 @@ class MantraTests: XCTestCase {
     
     func testEquality() throws {
         let standardId: UInt = 1
+        let ignoreTitle = "Black Sheep Wall"
         let ignoreText = "Not a complete."
         
-        let standardMantra = Mantra(id: standardId, text: ignoreText)
+        let standardMantra = Mantra(id: standardId, title: ignoreTitle, text: ignoreText)
         
         //same ids should be equal
-        let identicalControlMantra = Mantra(id: standardId, text: ignoreText)
+        let identicalControlMantra = Mantra(id: standardId, title: ignoreTitle, text: ignoreText)
         XCTAssertEqual(standardMantra, identicalControlMantra)
         
         //differing ids should be unequal
-        let differentIdControlMantra = Mantra(id: 2, text: ignoreText)
+        let differentIdControlMantra = Mantra(id: 2, title: ignoreTitle, text: ignoreText)
         XCTAssertNotEqual(standardMantra, differentIdControlMantra)
     }
     
     func testInits() throws {
         //init() creates a Mantra with the following fields:
-        let basicMantra = Mantra(id: 0, text: "")
+        let basicMantra = Mantra(id: 0, title: "", text: "")
         let basicTestMantra = Mantra()
         XCTAssertTrue(Mantra.InstancesHaveEqualFields(basicTestMantra, basicMantra))
         
         
         //init(id:, text:) sets the id and text by parameter and viewedToday as false
         let customId: UInt = 3
+        let customTitle = "Identity"
         let customText = "You are a woke Deaf person"
-        let customTestMantra = Mantra(id: customId, text: customText)
-        let customMantra = Mantra(id: customId, text: customText)
+        let customTestMantra = Mantra(id: customId, title: customTitle, text: customText)
+        let customMantra = Mantra(id: customId, title: customTitle, text: customText)
         XCTAssertTrue(Mantra.InstancesHaveEqualFields(customTestMantra, customMantra))
         
         let differentId: UInt = 5
-        let differentIdMantra = Mantra(id: differentId, text: customText)
+        let differentIdMantra = Mantra(id: differentId, title: customTitle, text: customText)
         XCTAssertFalse(Mantra.InstancesHaveEqualFields(customTestMantra, differentIdMantra))
         
+        let differentTitle = "Non Identity"
+        let differentTitleMantra = Mantra(id: customId, title: differentTitle, text: customText)
+        XCTAssertFalse(Mantra.InstancesHaveEqualFields(customTestMantra, differentTitleMantra))
+        
         let differentText = "I HAVE THE PANTS"
-        let differentTextMantra = Mantra(id: customId, text: differentText)
+        let differentTextMantra = Mantra(id: customId, title: customTitle, text: differentText)
         XCTAssertFalse(Mantra.InstancesHaveEqualFields(customTestMantra, differentTextMantra))
         
-        let differentIdAndTextMantra = Mantra(id: differentId, text: differentText)
-        XCTAssertFalse(Mantra.InstancesHaveEqualFields(customMantra, differentIdAndTextMantra))
+        let differentIdTitleTextMantra = Mantra(id: differentId, title: differentTitle, text: differentText)
+        XCTAssertFalse(Mantra.InstancesHaveEqualFields(customMantra, differentIdTitleTextMantra))
         
         
         //init?(coder: ) sets the id and text by file and viewedToday as false
@@ -78,36 +84,51 @@ class MantraTests: XCTestCase {
     func testChangeText() throws {
         //overwrites the text
         let newText = "This is awkward."
-        let editingMantra = Mantra(id: 0, text: "Well then")
+        let editingMantra = Mantra(id: 0, title: "", text: "Well then")
         editingMantra.ChangeText(to: newText)
         XCTAssertEqual(editingMantra.m_Text, newText)
     }
     
+    func testChangeTitle() throws {
+        //overwrites the title
+        let newTitle = "Banana"
+        let editingMantra = Mantra(id: 0, title: "Something Profound", text: "")
+        editingMantra.ChangeTitle(to: newTitle)
+        XCTAssertEqual(editingMantra.m_Title, newTitle)
+    }
+    
     func testDescription() throws {
         //description shows the mantra's properties in an organized format
-        let mantra = Mantra(id: 2, text: "Not a complete.")
-        XCTAssertEqual(mantra.description, "\nId: 2\nText: Not a complete.")
+        let mantra = Mantra(id: 2, title: "Remember", text: "Not a complete.")
+        XCTAssertEqual(mantra.description, "\nId: 2\nTitle: Remember\nText: Not a complete.")
     }
     
     func testNotificationContent() throws {
-        let mantra = Mantra(id: 1, text: "Your environment shapes your behavior.")
+        let id: UInt = 1
+        let title = NSString.localizedUserNotificationString(forKey: "Persuasion", arguments: nil)
+        let text = NSString.localizedUserNotificationString(forKey: "Your environment shapes your behavior.", arguments: nil)
+        
+        let mantra = Mantra(id: id, title: title, text: text)
         let content = UNMutableNotificationContent()
-        content.title = "Mantra 1"
-        content.body = "Your environment shapes your behavior."
+        content.title = title
+        content.body = text
+        content.sound = UNNotificationSound.default
         XCTAssertTrue(content == mantra.notificationContent)
     }
     
     func testHash() throws {
         //hashing combines the text, id, and ViewedToday properties
         let id: UInt = 1
+        let title = "Road Trip"
         let text = "Not a complete."
-        let mantra = Mantra(id: id, text: text)
+        let mantra = Mantra(id: id, title: title, text: text)
         
         var mantraHasher = Hasher()
         mantra.hash(into: &mantraHasher)
         
         var manualHasher = Hasher()
         manualHasher.combine(id)
+        manualHasher.combine(title)
         manualHasher.combine(text)
         
         XCTAssertEqual(manualHasher.finalize(), mantraHasher.finalize())
@@ -116,26 +137,20 @@ class MantraTests: XCTestCase {
     func testEncode() throws {
         //encoding includes only the id and text properties
         let id: UInt = 1
+        let title = "Road Trip"
         let text = "Not a complete."
-        let mantra = Mantra(id: id, text: text)
+        let mantra = Mantra(id: id, title: title, text: text)
         
         let mantraEncoder = NSKeyedArchiver(requiringSecureCoding: true)
         mantra.encode(with: mantraEncoder)
         mantraEncoder.finishEncoding()
         
         let manualEncoder = NSKeyedArchiver(requiringSecureCoding: true)
-        manualEncoder.encode(id, forKey: Mantra.CodingKeys.m_Id.rawValue)
-        manualEncoder.encode(text, forKey: Mantra.CodingKeys.m_Text.rawValue)
+        manualEncoder.encode(id, forKey: Mantra.CodingKeys.id.rawValue)
+        manualEncoder.encode(title, forKey: Mantra.CodingKeys.title.rawValue)
+        manualEncoder.encode(text, forKey: Mantra.CodingKeys.text.rawValue)
         manualEncoder.finishEncoding()
         
         XCTAssertEqual(mantraEncoder.encodedData, manualEncoder.encodedData)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

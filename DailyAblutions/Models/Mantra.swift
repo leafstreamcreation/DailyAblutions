@@ -12,28 +12,26 @@ import UserNotifications
 class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible, Notificationable {
     
     class PropertyKeys {
-        static let ID: String = CodingKeys.m_Id.rawValue
-        static let TEXT: String = CodingKeys.m_Text.rawValue
+        static let ID: String = CodingKeys.id.rawValue
+        static let TITLE: String = CodingKeys.title.rawValue
+        static let TEXT: String = CodingKeys.text.rawValue
     }
     
     //MARK: Fields
     internal var m_Id: UInt
+    internal var m_Title: String
     internal var m_Text: String
     
     var description: String {
-        return "\nId: \(m_Id)\nText: \(m_Text)"
+        return "\nId: \(m_Id)\nTitle: \(m_Title)\nText: \(m_Text)"
     }
     
    var notificationContent: UNMutableNotificationContent {
         let content = UNMutableNotificationContent()
-        content.title = NSString.localizedUserNotificationString(forKey: "Mantra \(m_Id)", arguments: nil)
+        content.title = NSString.localizedUserNotificationString(forKey: m_Title, arguments: nil)
         content.body = NSString.localizedUserNotificationString(forKey: m_Text, arguments: nil)
+        content.sound = UNNotificationSound.default
         return content
-    }
-    
-    var text: String {
-        let copy = m_Text
-        return copy
     }
     
     var id: UInt {
@@ -41,22 +39,35 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible, Notific
         return copy
     }
     
+    var title: String {
+        let copy = m_Title
+        return copy
+    }
+    
+    var text: String {
+        let copy = m_Text
+        return copy
+    }
+    
     
     //MARK: Types
     enum CodingKeys: String, CodingKey {
-        case m_Id = "id"
-        case m_Text = "text"
+        case id = "id"
+        case title = "title"
+        case text = "text"
     }
     
     
     //MARK: Initializers
     init() {
-        m_Text = ""
         m_Id = 0
+        m_Title = ""
+        m_Text = ""
     }
     
-    init(id: UInt, text: String) {
+    init(id: UInt, title: String, text: String) {
         m_Id = id
+        m_Title = title
         m_Text = text
     }
     
@@ -67,6 +78,10 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible, Notific
         m_Text = text
     }
     
+    func ChangeTitle(to title: String) {
+        m_Title = title
+    }
+    
     
     //MARK: Hashable
     static func == (lhs: Mantra, rhs: Mantra) -> Bool {
@@ -75,14 +90,16 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible, Notific
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(m_Id)
+        hasher.combine(m_Title)
         hasher.combine(m_Text)
     }
     
     
     //MARK: NSCoding
     func encode(with coder: NSCoder) {
-        coder.encode(m_Id, forKey: CodingKeys.m_Id.rawValue)
-        coder.encode(m_Text, forKey: CodingKeys.m_Text.rawValue)
+        coder.encode(m_Id, forKey: CodingKeys.id.rawValue)
+        coder.encode(m_Title, forKey: CodingKeys.title.rawValue)
+        coder.encode(m_Text, forKey: CodingKeys.text.rawValue)
     }
     
     required convenience init?(coder: NSCoder) {

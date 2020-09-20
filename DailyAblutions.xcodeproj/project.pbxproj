@@ -23,6 +23,7 @@
 		7FBA9E0C2495F12B009F335A /* DailyAblutionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBA9E0B2495F12B009F335A /* DailyAblutionsView.swift */; };
 		7FC07D30250E9C010061C73F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC07D2F250E9C000061C73F /* NotificationManager.swift */; };
 		7FC07D32250EA2470061C73F /* NotificationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC07D31250EA2470061C73F /* NotificationManagerTests.swift */; };
+		7FC07D3525113EB00061C73F /* DeterminationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC07D3425113EB00061C73F /* DeterminationViewController.swift */; };
 		7FDF10002481A247008C93DB /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF0FFF2481A247008C93DB /* ReminderListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		7FBA9E0B2495F12B009F335A /* DailyAblutionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAblutionsView.swift; sourceTree = "<group>"; };
 		7FC07D2F250E9C000061C73F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		7FC07D31250EA2470061C73F /* NotificationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerTests.swift; sourceTree = "<group>"; };
+		7FC07D3425113EB00061C73F /* DeterminationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeterminationViewController.swift; sourceTree = "<group>"; };
 		7FDF0FFF2481A247008C93DB /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 		7F42B6CC24452CF900D76434 /* DailyAblutions */ = {
 			isa = PBXGroup;
 			children = (
+				7FC07D3325113B9F0061C73F /* Controllers */,
 				7F94A86F248DA59800DD0E75 /* DailyAblutions.entitlements */,
 				7F42B6CD24452CF900D76434 /* AppDelegate.swift */,
 				7F42B6CF24452CF900D76434 /* SceneDelegate.swift */,
@@ -117,7 +120,6 @@
 				652AA29E2488402E00088178 /* DailyAblutionsHomeView.swift */,
 				7F94A874248E6DB200DD0E75 /* PageViewController.swift */,
 				7FBA9E0B2495F12B009F335A /* DailyAblutionsView.swift */,
-				7FC07D2F250E9C000061C73F /* NotificationManager.swift */,
 			);
 			path = DailyAblutions;
 			sourceTree = "<group>";
@@ -156,6 +158,15 @@
 				7F94A871248DA59900DD0E75 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FC07D3325113B9F0061C73F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FC07D2F250E9C000061C73F /* NotificationManager.swift */,
+				7FC07D3425113EB00061C73F /* DeterminationViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		7FDF0FFD2481A134008C93DB /* Supporting Views */ = {
@@ -218,7 +229,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Noble Software";
 				TargetAttributes = {
 					7F42B6C924452CF900D76434 = {
@@ -275,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC07D3525113EB00061C73F /* DeterminationViewController.swift in Sources */,
 				7F4F0AEE2481AE7B00D1C44B /* NotificationSampleData.swift in Sources */,
 				7F42B6CE24452CF900D76434 /* AppDelegate.swift in Sources */,
 				7FC07D30250E9C010061C73F /* NotificationManager.swift in Sources */,
@@ -346,6 +358,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -406,6 +419,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

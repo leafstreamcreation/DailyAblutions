@@ -26,13 +26,14 @@ class NotificationManagerTests: XCTestCase {
     }
     
     func testSchedule() throws {
+        //USE XCTest Asynchronous expectations to test this.
         print("Schedule test setup.")
         let center = UNUserNotificationCenter.current()
         center.removeAllPendingNotificationRequests()
         
-        let mantras = [Mantra(id: 1, text: "Are you feeling full?"),
-                       Mantra(id: 2, text: "Have you planned for today?"),
-                       Mantra(id: 3, text: "ASL Word: WHAT'S UP")]
+        let mantras = [Mantra(id: 1, title: "Weed", text: "Are you feeling full?"),
+                       Mantra(id: 2, title: "Schedule", text: "Have you planned for today?"),
+                       Mantra(id: 3, title: "ASL", text: "ASL Word: WHAT'S UP")]
         
         let calendar = Calendar.current
         let start = Date()
@@ -50,6 +51,8 @@ class NotificationManagerTests: XCTestCase {
             
             for (index, request) in requests.enumerated() {
                 //this assumes that mantras are
+                let trigger = (request.trigger!) as! UNCalendarNotificationTrigger
+                print("Mantra \(index) firing at: \(trigger.dateComponents.hour!) hours, \(trigger.dateComponents.minute!) minutes")
                 XCTAssertEqual(mantras[index].text, request.content.body)
             }
             print("The contents of the requests match the test mantras, and are scheduled in the correct order.")
