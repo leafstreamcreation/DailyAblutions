@@ -16,20 +16,20 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
     
     override init(rootView: Content) {
         m_Mantras = [
-            Mantra(id: 1, title: "Social Scripts", text: "Throw a topic out to start a conversation"),
-            Mantra(id: 2, title: "Identity", text: "Center your Deafness and your Feedism"),
-            Mantra(id: 3, title: "Persuasion", text: "Shape your environment to shape your behavior"),
-            Mantra(id: 4, title: "Projects", text: "Admire the app you built!"),
-            Mantra(id: 5, title: "Persuasion", text: "Keep your wits about you. Don't smoke anymore"),
-            Mantra(id: 6, title: "Dominance", text: "Be the one to start sex"),
-            Mantra(id: 7, title: "Determination", text: "I love you. Your past thanks your present"),
-            Mantra(id: 8, title: "Dominance", text: "Interrupt Chloe when she is distracted"),
-            Mantra(id: 9, title: "Dominance", text: "Find work to fix your sadness"),
-            Mantra(id: 10, title: "ASL practice", text: "Sign these: GOOD (MORNING/AFTERNOON/NIGHT), DAD/MOM, BRO/SIS"),
-            Mantra(id: 11, title: "Social Scripts", text: "Engage with Kay. Ask her to speak up"),
-            Mantra(id: 12, title: "Determination", text: "You are enough"),
-            Mantra(id: 13, title: "Determination", text: "Check your to-do list"),
-            Mantra(id: 14, title: "Social Scripts", text: "Interrupt people. Your words are important")
+            Mantra(id: 1, title: "Self advocate", text: "Express yourself without thinking"),
+            Mantra(id: 2, title: "Be alert", text: "Anticipate problems from others and respond"),
+            Mantra(id: 3, title: "Build your best world", text: "Shape your environment to shape your behavior"),
+            Mantra(id: 4, title: "Appreciate life", text: "You built this app on your own"),
+            Mantra(id: 5, title: "Self advocate", text: "You deserve space to recharge"),
+            Mantra(id: 6, title: "Be dominant", text: "Start sex. Discipline her. Tease her"),
+            Mantra(id: 7, title: "Appreciate life", text: "Reflect on something amazing that happened"),
+            Mantra(id: 8, title: "Communicate", text: "If you're having trouble communicating, say so"),
+            Mantra(id: 9, title: "Be determined", text: "Every task is an investment in happiness"),
+            Mantra(id: 10, title: "Be Deaf", text: "GOOD (MORNING/AFTERNOON/NIGHT), DAD/MOM, BRO/SIS"),
+            Mantra(id: 11, title: "Forge bonds", text: "Kay and Angie are family. Ask them to speak up"),
+            Mantra(id: 12, title: "Be determined", text: "You are enough"),
+            Mantra(id: 13, title: "Appreciate life", text: "Your girlfriend is getting extremely fat for you"),
+            Mantra(id: 14, title: "Communicate", text: "Interrupt people. Your words are important")
         ]
         m_NotificationManager = NotificationManager()
         super.init(rootView: rootView)
