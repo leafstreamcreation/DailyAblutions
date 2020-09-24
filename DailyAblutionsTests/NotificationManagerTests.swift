@@ -27,7 +27,6 @@ class NotificationManagerTests: XCTestCase {
     
     func testSchedule() throws {
         //USE XCTest Asynchronous expectations to test this.
-        print("Schedule test setup.")
         let center = UNUserNotificationCenter.current()
         center.removeAllPendingNotificationRequests()
         
@@ -36,31 +35,33 @@ class NotificationManagerTests: XCTestCase {
                        Mantra(id: 3, title: "ASL", text: "ASL Word: WHAT'S UP")]
         
         let calendar = Calendar.current
+        //test notifications will begin firing immediately
         let start = Date()
-        let end = calendar.date(byAdding: .hour, value: 14, to: start)!
+        //test notifications will stop firing 1 hour after they start firing
+        let end = calendar.date(byAdding: .hour, value: 1, to: start)!
         let interval = DateInterval(start: start, end: end)
         
         let manager = NotificationManager()
+        manager.m_Permission = true
         manager.Schedule(notifications: mantras, over: interval.duration)
         
+        let expectation = XCTestExpectation(description: "The contents of the requests match the test mantras, and are scheduled in the correct order.")
+        print("Notifications starting at: \(calendar.component(.hour, from: start)) hours, \(calendar.component(.minute, from: start)) minutes")
+        print("Notifications ending at: \(calendar.component(.hour, from: end)) hours, \(calendar.component(.minute, from: end)) minutes")
         center.getPendingNotificationRequests(completionHandler: {
             (requests : [UNNotificationRequest]) in
-            print("Now the real test begins.")
             XCTAssertEqual(mantras.count, requests.count)
             print("The test mantras and requests have equal counts.")
             
             for (index, request) in requests.enumerated() {
-                //this assumes that mantras are
-                let trigger = (request.trigger!) as! UNCalendarNotificationTrigger
-                print("Mantra \(index) firing at: \(trigger.dateComponents.hour!) hours, \(trigger.dateComponents.minute!) minutes")
+                let trigger = (request.trigger!) as! UNTimeIntervalNotificationTrigger
+                let firingDate = trigger.nextTriggerDate()!
+                print("Mantra \(index + 1) firing at: \(calendar.component(.hour, from: firingDate)) hours, \(calendar.component(.minute, from: firingDate)) minutes")
                 XCTAssertEqual(mantras[index].text, request.content.body)
             }
-            print("The contents of the requests match the test mantras, and are scheduled in the correct order.")
-            print("Test Passed.")
-            
-            //to do: test that the notifications are scheduled at the right time
+            expectation.fulfill()
         })
-        print("End of Test.")
+        wait(for: [expectation], timeout: 10.0)
     }
 
     func testPerformanceExample() throws {

@@ -51,14 +51,15 @@ class NotificationManager: NSObject {
         if m_Permission && !notifications.isEmpty && !over.isLessThanOrEqualTo(0.0) {
             
             let notificationInterval = over / Double(notifications.count)
+            print("Notification interval: \(notificationInterval)")
             
             let rng = GKRandomDistribution(randomSource: GKMersenneTwisterRandomSource(), lowestValue: 0, highestValue: Int(notificationInterval))
             
             var scheduleHead = 0.0
             for (index, notification) in notifications.enumerated() {
                 let randomInterval = Double(rng.nextUniform())
-                debugPrint("Random interval: \(randomInterval)")
-                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: scheduleHead + Double(randomInterval), repeats: false)
+                debugPrint("Random interval: \(Double(randomInterval))")
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: scheduleHead + Double(notificationInterval * randomInterval), repeats: false)
                 let request = UNNotificationRequest(identifier: "Mantra \(index)", content: notification.notificationContent, trigger: trigger)
                 m_Center.add(request, withCompletionHandler: {
                     error in
@@ -66,7 +67,7 @@ class NotificationManager: NSObject {
                         print(error!)
                     }
                     else {
-                        print("Added Mantra \(index)")
+                        print("Added Mantra \(index + 1)")
                     }
                 })
                 scheduleHead += notificationInterval
