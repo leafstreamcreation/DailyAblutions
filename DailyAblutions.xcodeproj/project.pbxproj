@@ -25,6 +25,20 @@
 		7FC07D32250EA2470061C73F /* NotificationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC07D31250EA2470061C73F /* NotificationManagerTests.swift */; };
 		7FC07D3525113EB00061C73F /* DeterminationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC07D3425113EB00061C73F /* DeterminationViewController.swift */; };
 		7FDF10002481A247008C93DB /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF0FFF2481A247008C93DB /* ReminderListView.swift */; };
+		7FE8A7F6252D11C400B4D595 /* Iloveyou200x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A7F3252D110300B4D595 /* Iloveyou200x.jpg */; };
+		7FE8A80B252D17F000B4D595 /* Iloveyou40x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A7FE252D17EE00B4D595 /* Iloveyou40x.jpg */; };
+		7FE8A80C252D17F000B4D595 /* Iloveyou1024x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A7FF252D17EE00B4D595 /* Iloveyou1024x.jpg */; };
+		7FE8A80D252D17F000B4D595 /* Iloveyou60x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A800252D17EE00B4D595 /* Iloveyou60x.jpg */; };
+		7FE8A80E252D17F000B4D595 /* Iloveyou152x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A801252D17EE00B4D595 /* Iloveyou152x.jpg */; };
+		7FE8A80F252D17F000B4D595 /* Iloveyou180x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A802252D17EE00B4D595 /* Iloveyou180x.jpg */; };
+		7FE8A810252D17F000B4D595 /* Iloveyou167x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A803252D17EF00B4D595 /* Iloveyou167x.jpg */; };
+		7FE8A811252D17F000B4D595 /* Iloveyou80x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A804252D17EF00B4D595 /* Iloveyou80x.jpg */; };
+		7FE8A812252D17F000B4D595 /* Iloveyou20x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A805252D17EF00B4D595 /* Iloveyou20x.jpg */; };
+		7FE8A813252D17F000B4D595 /* Iloveyou29x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A806252D17EF00B4D595 /* Iloveyou29x.jpg */; };
+		7FE8A814252D17F000B4D595 /* Iloveyou120x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A807252D17EF00B4D595 /* Iloveyou120x.jpg */; };
+		7FE8A815252D17F000B4D595 /* Iloveyou76x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A808252D17EF00B4D595 /* Iloveyou76x.jpg */; };
+		7FE8A816252D17F000B4D595 /* Iloveyou58x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A809252D17EF00B4D595 /* Iloveyou58x.jpg */; };
+		7FE8A817252D17F000B4D595 /* Iloveyou87x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FE8A80A252D17EF00B4D595 /* Iloveyou87x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +76,20 @@
 		7FC07D31250EA2470061C73F /* NotificationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerTests.swift; sourceTree = "<group>"; };
 		7FC07D3425113EB00061C73F /* DeterminationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeterminationViewController.swift; sourceTree = "<group>"; };
 		7FDF0FFF2481A247008C93DB /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		7FE8A7F3252D110300B4D595 /* Iloveyou200x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou200x.jpg; sourceTree = "<group>"; };
+		7FE8A7FE252D17EE00B4D595 /* Iloveyou40x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou40x.jpg; sourceTree = "<group>"; };
+		7FE8A7FF252D17EE00B4D595 /* Iloveyou1024x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou1024x.jpg; sourceTree = "<group>"; };
+		7FE8A800252D17EE00B4D595 /* Iloveyou60x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou60x.jpg; sourceTree = "<group>"; };
+		7FE8A801252D17EE00B4D595 /* Iloveyou152x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou152x.jpg; sourceTree = "<group>"; };
+		7FE8A802252D17EE00B4D595 /* Iloveyou180x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou180x.jpg; sourceTree = "<group>"; };
+		7FE8A803252D17EF00B4D595 /* Iloveyou167x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou167x.jpg; sourceTree = "<group>"; };
+		7FE8A804252D17EF00B4D595 /* Iloveyou80x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou80x.jpg; sourceTree = "<group>"; };
+		7FE8A805252D17EF00B4D595 /* Iloveyou20x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou20x.jpg; sourceTree = "<group>"; };
+		7FE8A806252D17EF00B4D595 /* Iloveyou29x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou29x.jpg; sourceTree = "<group>"; };
+		7FE8A807252D17EF00B4D595 /* Iloveyou120x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou120x.jpg; sourceTree = "<group>"; };
+		7FE8A808252D17EF00B4D595 /* Iloveyou76x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou76x.jpg; sourceTree = "<group>"; };
+		7FE8A809252D17EF00B4D595 /* Iloveyou58x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou58x.jpg; sourceTree = "<group>"; };
+		7FE8A80A252D17EF00B4D595 /* Iloveyou87x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Iloveyou87x.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +140,7 @@
 				7FDF0FFF2481A247008C93DB /* ReminderListView.swift */,
 				7FDF0FFE2481A1B2008C93DB /* Models */,
 				7F42B6D324452CFB00D76434 /* Assets.xcassets */,
+				7FE8A7F2252D110300B4D595 /* Resources */,
 				7F4F0AEC2481AE5300D1C44B /* Buildtime Resources */,
 				7F42B6D824452CFB00D76434 /* LaunchScreen.storyboard */,
 				7F42B6DB24452CFB00D76434 /* Info.plist */,
@@ -174,6 +203,35 @@
 				7F94A867248B08BF00DD0E75 /* Mantra.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7FE8A7F2252D110300B4D595 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FE8A7FD252D124A00B4D595 /* Iloveyou */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7FE8A7FD252D124A00B4D595 /* Iloveyou */ = {
+			isa = PBXGroup;
+			children = (
+				7FE8A805252D17EF00B4D595 /* Iloveyou20x.jpg */,
+				7FE8A806252D17EF00B4D595 /* Iloveyou29x.jpg */,
+				7FE8A7FE252D17EE00B4D595 /* Iloveyou40x.jpg */,
+				7FE8A809252D17EF00B4D595 /* Iloveyou58x.jpg */,
+				7FE8A800252D17EE00B4D595 /* Iloveyou60x.jpg */,
+				7FE8A808252D17EF00B4D595 /* Iloveyou76x.jpg */,
+				7FE8A804252D17EF00B4D595 /* Iloveyou80x.jpg */,
+				7FE8A80A252D17EF00B4D595 /* Iloveyou87x.jpg */,
+				7FE8A807252D17EF00B4D595 /* Iloveyou120x.jpg */,
+				7FE8A801252D17EE00B4D595 /* Iloveyou152x.jpg */,
+				7FE8A803252D17EF00B4D595 /* Iloveyou167x.jpg */,
+				7FE8A802252D17EE00B4D595 /* Iloveyou180x.jpg */,
+				7FE8A7FF252D17EE00B4D595 /* Iloveyou1024x.jpg */,
+				7FE8A7F3252D110300B4D595 /* Iloveyou200x.jpg */,
+			);
+			path = Iloveyou;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,9 +315,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE8A811252D17F000B4D595 /* Iloveyou80x.jpg in Resources */,
 				7F42B6DA24452CFB00D76434 /* LaunchScreen.storyboard in Resources */,
+				7FE8A814252D17F000B4D595 /* Iloveyou120x.jpg in Resources */,
+				7FE8A810252D17F000B4D595 /* Iloveyou167x.jpg in Resources */,
 				7F42B6D724452CFB00D76434 /* Preview Assets.xcassets in Resources */,
+				7FE8A817252D17F000B4D595 /* Iloveyou87x.jpg in Resources */,
+				7FE8A812252D17F000B4D595 /* Iloveyou20x.jpg in Resources */,
+				7FE8A80D252D17F000B4D595 /* Iloveyou60x.jpg in Resources */,
+				7FE8A815252D17F000B4D595 /* Iloveyou76x.jpg in Resources */,
+				7FE8A80F252D17F000B4D595 /* Iloveyou180x.jpg in Resources */,
+				7FE8A80E252D17F000B4D595 /* Iloveyou152x.jpg in Resources */,
+				7FE8A813252D17F000B4D595 /* Iloveyou29x.jpg in Resources */,
+				7FE8A7F6252D11C400B4D595 /* Iloveyou200x.jpg in Resources */,
+				7FE8A80C252D17F000B4D595 /* Iloveyou1024x.jpg in Resources */,
+				7FE8A80B252D17F000B4D595 /* Iloveyou40x.jpg in Resources */,
 				7F42B6D424452CFB00D76434 /* Assets.xcassets in Resources */,
+				7FE8A816252D17F000B4D595 /* Iloveyou58x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

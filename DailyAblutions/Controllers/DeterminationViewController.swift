@@ -16,20 +16,20 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
     
     override init(rootView: Content) {
         m_Mantras = [
-            Mantra(id: 1, title: "Think out loud!", text: "The more you express your thoughts, the easier it becomes"),
+            Mantra(id: 1, title: "Avoid trying to listen", text: "The hearies waste their breath"),
             Mantra(id: 2, title: "Compare yourself to nobody", text: "Do you know any other Deaf feeders?"),
             Mantra(id: 3, title: "You are defined by your choices", text: "Shape your environment to make better ones"),
-            Mantra(id: 4, title: "You built this program", text: "And that's just one of your many accomplishments"),
+            Mantra(id: 4, title: "You built this program", text: "Good job!"),
             Mantra(id: 5, title: "Self advocate", text: "You deserve space to recharge"),
             Mantra(id: 6, title: "Explore dominance", text: "Start sex. Tease her.\nTell her how fat she is"),
-            Mantra(id: 7, title: "Sign with your eyes", text: "Your inner voice is for speaking"),
-            Mantra(id: 8, title: "Pay yourself first", text: "You are fairer than the world"),
+            Mantra(id: 7, title: "Ignore hearies", text: "They must reliably accomodate you"),
+            Mantra(id: 8, title: "Pay yourself first", text: "How about browsing some Deaf media?"),
             Mantra(id: 9, title: "Your power is your own", text: "Nobody deserves it more than you"),
-            Mantra(id: 10, title: "Practice signing", text: "GOOD (MORNING/AFTERNOON/NIGHT), DAD/MOM, BRO/SIS"),
+            Mantra(id: 10, title: "Practice signing", text: "GOOD (MORNING/AFTERNOON/NIGHT), DAD/MOM, BRO/SIS, WHAT'S UP?, TIME, SAME, NOTHING, AUNT/UNCLE, SEE YOU LATER, FOOD, LIKE"),
             Mantra(id: 11, title: "Sit gently on the couch", text: "Angie will thank you"),
-            Mantra(id: 12, title: "You are enough", text: "People want to be you"),
+            Mantra(id: 12, title: "You are enough", text: "Take a moment to reflect\non something you like\nabout yourself"),
             Mantra(id: 13, title: "Love yourself", text: "Believe in the me\nthat believes in you!"),
-            Mantra(id: 14, title: "Set boundaries", text: "You owe it to yourself over everyone else")
+            Mantra(id: 14, title: "Set boundaries", text: "You owe yourself everything")
         ]
         m_NotificationManager = NotificationManager()
         super.init(rootView: rootView)

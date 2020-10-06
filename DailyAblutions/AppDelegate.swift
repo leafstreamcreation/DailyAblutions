@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import BackgroundTasks
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let START_TIME = 10
 
 
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        // Override point for registering background tasks
+        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.noblesoftware.DailyAblutions.daily_refresh", using: nil, launchHandler: { task in
+            self.HandleAppRefresh(task: task as! BGAppRefreshTask)
+        })
+        return true
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -33,5 +43,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    func HandleAppRefresh(task: BGAppRefreshTask) {
+        ScheduleNextRefresh()
+        
+        //
+    }
+    
+    func ScheduleNextRefresh() {
+        let request = BGAppRefreshTaskRequest(identifier: "com.noblesoftware.DailyAblutions.daily_refresh")
+        
+        let calendar = Calendar.current
+        var startTomorrow = calendar.date(byAdding: .day, value: 1, to: Date())!
+        startTomorrow = calendar.startOfDay(for: startTomorrow)
+        
+        request.earliestBeginDate = calendar.date(byAdding: .hour, value: START_TIME, to: startTomorrow)!
+        
+        do {
+            try BGTaskScheduler.shared.submit(request)
+        } catch {
+            print("Could not schedule app refresh: \(error)")
+        }
+    }
 }
 
