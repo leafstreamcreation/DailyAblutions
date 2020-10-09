@@ -30,7 +30,7 @@ class NotificationManagerTests: XCTestCase {
         let center = UNUserNotificationCenter.current()
         center.removeAllPendingNotificationRequests()
         
-        let mantras = [Mantra(id: 1, title: "Weed", text: "Are you feeling full?"),
+        let mantras = [Mantra(id: 1, title: "Food", text: "Are you feeling full?"),
                        Mantra(id: 2, title: "Schedule", text: "Have you planned for today?"),
                        Mantra(id: 3, title: "ASL", text: "ASL Word: WHAT'S UP")]
         

@@ -31,7 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //ScheduleNextRefresh()
         
         BGTaskScheduler.shared.getPendingTaskRequests(completionHandler: { taskrequests in
             for request in taskrequests {
@@ -59,6 +58,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func HandleAppRefresh(task: BGAppRefreshTask) {
         ScheduleNextRefresh()
+        
+        let operationQueue = OperationQueue()
         
         let operation = BlockOperation(block: {
             let mantras = [
@@ -94,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         operation.completionBlock = {
             task.setTaskCompleted(success: !operation.isCancelled)
         }
-        operation.start()
+        operationQueue.addOperation(operation)
     }
     
     func ScheduleNextRefresh() {
