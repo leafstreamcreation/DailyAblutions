@@ -16,20 +16,20 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
     
     override init(rootView: Content) {
         m_Mantras = [
-            Mantra(id: 1, title: "Avoid trying to listen", text: "Hearies waste their breath"),
+            Mantra(id: 1, title: "Waiting for a pause is too nice.", text: "And trying to listen robs you of your intelligence:\nIn what situations do you find yourself waiting and listening?"),
             Mantra(id: 2, title: "Compare yourself to nobody", text: "Do you know any other Deaf feeders?"),
-            Mantra(id: 3, title: "You are defined by your choices", text: "Shape your environment to make better ones"),
-            Mantra(id: 4, title: "You built this program", text: "Good job!"),
-            Mantra(id: 5, title: "Self advocate", text: "You deserve space to recharge"),
-            Mantra(id: 6, title: "Explore dominance", text: "Start sex. Tease her.\nTell her how fat she is"),
-            Mantra(id: 7, title: "Ignore hearies", text: "They must reliably accomodate you"),
-            Mantra(id: 8, title: "Pay yourself first", text: "How about browsing some Deaf media?"),
-            Mantra(id: 9, title: "Your power is your own", text: "Nobody deserves it more than you"),
-            Mantra(id: 10, title: "Practice signing", text: "GOOD (MORNING/AFTERNOON/NIGHT), DAD/MOM, BRO/SIS, WHAT'S UP?, TIME, SAME, NOTHING, AUNT/UNCLE, SEE YOU LATER, FOOD, LIKE"),
-            Mantra(id: 11, title: "Sit gently on the couch", text: "Angie will thank you"),
-            Mantra(id: 12, title: "You are enough", text: "Take a moment to reflect\non something you like\nabout yourself"),
-            Mantra(id: 13, title: "Love yourself", text: "Believe in the me\nthat believes in you!"),
-            Mantra(id: 14, title: "Set boundaries", text: "You owe yourself everything")
+            Mantra(id: 3, title: "You are defined by your choices", text: "What are your goals?\nIs there something in your environment that doesn't support them?"),
+            Mantra(id: 4, title: "You built this program!", text: "Read every mantra; consider its value and answer the question each time:\nHow can I make this better?"),
+            Mantra(id: 5, title: "Self advocate", text: "Take the time to be present.\nWhen I feel overwhelmed, what can I do to recenter myself?"),
+            Mantra(id: 6, title: "Explore dominance", text: "Chloe's little side loves paternal discipline.\nHow can you use that to delight her?"),
+            Mantra(id: 7, title: "Chloe is 470 pounds of faaaaat 🐷", text: "And she loves you unconditionally. She sees when you're overwhelmed;\nlet her help."),
+            Mantra(id: 8, title: "Only do what needs to be done", text: "Anything more is a waste of time.\nWhen you hesitate to do or say something imperfectly ask:\nDoes it get the job done?"),
+            Mantra(id: 9, title: "Keep things moving", text: "Plan each day. Pick a direction and swim.\nWhen you feel like taking a break, ask why."),
+            Mantra(id: 10, title: "Practice signing", text: "GOOD (MORNING/AFTERNOON/NIGHT), DAD/MOM, BRO/SIS, WHAT'S UP?, TIME, SAME, NOTHING, AUNT/UNCLE, SEE YOU LATER, FOOD, LIKE, READY, REALLY, BOY/GIRL, LANGUAGE, PLACE, FOR, GOOD/BAD"),
+            Mantra(id: 11, title: "Sit gently on the couch", text: "How will you be mindful of when you are sitting down?"),
+            Mantra(id: 12, title: "Better coping mechanisms", text: "Cannabis and video games are poor coping mechanisms. When you feel like doing either ask:\nIs there a satisfying alternative?"),
+            Mantra(id: 13, title: "You are enough", text: "Believe in the me\nthat believes in you!"),
+            Mantra(id: 14, title: "Everything gets better after work starts", text: "If you haven't looked for work yet today:\nwhat would help to get it done?")
         ]
         m_NotificationManager = NotificationManager()
         super.init(rootView: rootView)

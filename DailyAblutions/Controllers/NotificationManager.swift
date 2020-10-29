@@ -63,8 +63,9 @@ class NotificationManager: NSObject {
                 let request = UNNotificationRequest(identifier: "Mantra \(index)", content: notification.notificationContent, trigger: trigger)
                 m_Center.add(request, withCompletionHandler: {
                     error in
-                    if error != nil {
-                        print(error!)
+                    if let failure = error {
+                        print(failure.localizedDescription)
+                        Utilities.debugNotification(id: "Schedule failure \(index)", message: "Failed to schedule Mantra")
                     }
                     else {
                         print("Added Mantra \(index + 1)")
