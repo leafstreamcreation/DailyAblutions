@@ -60,7 +60,7 @@ class NotificationManager: NSObject {
                 let randomInterval = Double(rng.nextUniform())
                 debugPrint("Random interval: \(Double(randomInterval))")
                 let trigger = UNTimeIntervalNotificationTrigger(timeInterval: scheduleHead + Double(notificationInterval * randomInterval), repeats: false)
-                let request = UNNotificationRequest(identifier: "Mantra \(index)", content: notification.notificationContent, trigger: trigger)
+                let request = UNNotificationRequest(identifier: "DailyAblutions \(notification.notificationContent.title) \(index)", content: notification.notificationContent, trigger: trigger)
                 m_Center.add(request, withCompletionHandler: {
                     error in
                     if let failure = error {

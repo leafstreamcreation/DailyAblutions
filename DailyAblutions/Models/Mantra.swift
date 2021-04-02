@@ -16,6 +16,15 @@ class Mantra: Hashable, NSCoding, Identifiable, CustomStringConvertible, Notific
         static let TITLE: String = CodingKeys.title.rawValue
         static let TEXT: String = CodingKeys.text.rawValue
     }
+    //MARK: Class
+    static func createMany(number: UInt, title: String, text: String) -> [Mantra] {
+        var mantras = [Mantra]()
+        for index in 1...number  {
+            mantras.append(Mantra(id: index, title: title, text: text))
+        }
+        return mantras
+    }
+    
     
     //MARK: Fields
     internal var m_Id: UInt

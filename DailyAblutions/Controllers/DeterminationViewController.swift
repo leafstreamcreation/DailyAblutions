@@ -11,26 +11,20 @@ import SwiftUI
 
 class DeterminationViewController<Content> : UIHostingController<Content> where Content : View {
     
-    internal var m_Mantras : [Mantra]
+    internal var m_Mantras : [[Mantra]]
     internal var m_NotificationManager : NotificationManager
     
     override init(rootView: Content) {
-        m_Mantras = [
-            Mantra(id: 1, title: "Waiting for a pause is too nice.", text: "And trying to listen robs you of your intelligence:\nIn what situations do you find yourself waiting and listening?"),
-            Mantra(id: 2, title: "Compare yourself to nobody", text: "Do you know any other Deaf feeders?"),
-            Mantra(id: 3, title: "You are defined by your choices", text: "What are your goals?\nIs there something in your environment that doesn't support them?"),
-            Mantra(id: 4, title: "You built this program!", text: "Read every mantra; consider its value and answer the question each time:\nHow can I make this better?"),
-            Mantra(id: 5, title: "Self advocate", text: "Take the time to be present.\nWhen I feel overwhelmed, what can I do to recenter myself?"),
-            Mantra(id: 6, title: "Explore dominance", text: "Chloe's little side loves paternal discipline.\nHow can you use that to delight her?"),
-            Mantra(id: 7, title: "Chloe is 470 pounds of faaaaat 🐷", text: "And she loves you unconditionally. She sees when you're overwhelmed;\nlet her help."),
-            Mantra(id: 8, title: "Only do what needs to be done", text: "Anything more is a waste of time.\nWhen you hesitate to do or say something imperfectly ask:\nDoes it get the job done?"),
-            Mantra(id: 9, title: "Keep things moving", text: "Plan each day. Pick a direction and swim.\nWhen you feel like taking a break, ask why."),
-            Mantra(id: 10, title: "Practice signing", text: "GOOD (MORNING/AFTERNOON/NIGHT), DAD/MOM, BRO/SIS, WHAT'S UP?, TIME, SAME, NOTHING, AUNT/UNCLE, SEE YOU LATER, FOOD, LIKE, READY, REALLY, BOY/GIRL, LANGUAGE, PLACE, FOR, GOOD/BAD"),
-            Mantra(id: 11, title: "Sit gently on the couch", text: "How will you be mindful of when you are sitting down?"),
-            Mantra(id: 12, title: "Better coping mechanisms", text: "Cannabis and video games are poor coping mechanisms. When you feel like doing either ask:\nIs there a satisfying alternative?"),
-            Mantra(id: 13, title: "You are enough", text: "Believe in the me\nthat believes in you!"),
-            Mantra(id: 14, title: "Everything gets better after work starts", text: "If you haven't looked for work yet today:\nwhat would help to get it done?")
-        ]
+        m_Mantras = [[Mantra]]()
+        m_Mantras.append(Mantra.createMany(number: 2, title: "You are a Deaf feeder", text: "Why is it inappropriate for a hearie to comment on your hearing and speech?"))
+        m_Mantras.append(Mantra.createMany(number: 7, title: "You have to keep things moving", text: "Have you checked your to do list?"))
+        m_Mantras.append(Mantra.createMany(number: 2, title: "Practice signing", text: "DAD/MOM, BRO/SIS, NEED/MUST, WANT, COOL, NOTHING, AUNT/UNCLE, SEE YOU LATER, HAVE, BOY/GIRL, LANGUAGE, PLACE, FOR, MEAN"))
+        m_Mantras.append(Mantra.createMany(number: 7, title: "Let software be your leisure", text: "What do you want to push to github today?"))
+        m_Mantras.append(Mantra.createMany(number: 2, title: "Feed yourself", text: "When are you going to finish meal prepping?"))
+        m_Mantras.append(Mantra.createMany(number: 7, title: "Finish taxes", text: "What is the next step to finishing taxes?"))
+        m_Mantras.append(Mantra.createMany(number: 7, title: "Car registration", text: "What is the next step taking care of the car?"))
+        m_Mantras.append(Mantra.createMany(number: 7, title: "Wall painting", text: "What is the next step finishing wall repairs?"))
+        m_Mantras.append(Mantra.createMany(number: 7, title: "Network", text: "What are the next steps to grow my network?"))
         m_NotificationManager = NotificationManager()
         super.init(rootView: rootView)
     }
@@ -40,7 +34,9 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
     }
     
     func Start() {
-        m_NotificationManager.Schedule(notifications: m_Mantras.shuffled(), over: GenerateNotificationInterval())
+        for mantra in m_Mantras {
+            m_NotificationManager.Schedule(notifications: mantra, over: GenerateNotificationInterval())
+        }
         print("Schedule complete")
     }
 
