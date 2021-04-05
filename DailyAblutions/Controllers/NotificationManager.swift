@@ -76,6 +76,10 @@ class NotificationManager: NSObject {
         }
         
     }
+    
+    func clearNotifications() {
+        m_Center.removeAllPendingNotificationRequests()
+    }
 }
 
 protocol Notificationable {

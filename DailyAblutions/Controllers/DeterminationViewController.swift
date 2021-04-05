@@ -41,6 +41,7 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
     }
     
     func Start() {
+        m_NotificationManager.clearNotifications()
         for mantra in m_Mantras {
             m_NotificationManager.Schedule(notifications: mantra, over: GenerateNotificationInterval())
         }
