@@ -81,8 +81,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             mantras.append(Mantra.createMany(number: 2, title: "Practice signing", text: "DAD/MOM, BRO/SIS, NEED/MUST, WANT, COOL, NOTHING, AUNT/UNCLE, SEE YOU LATER, HAVE, BOY/GIRL, LANGUAGE, PLACE, FOR, MEAN"))
             mantras.append(Mantra.createMany(number: 5, title: "Let software be your leisure", text: "What do you want to push to github today?"))
             mantras.append(Mantra.createMany(number: 5, title: "Feed yourself", text: "When are you going to finish making salsa?"))
-            mantras.append(Mantra.createMany(number: 5, title: "Finish taxes", text: "What is the next step to finishing taxes?"))
-            mantras.append(Mantra.createMany(number: 5, title: "Car registration", text: "What is the next step taking care of the car? Make a plan"))
+            mantras.append(Mantra.createMany(number: 5, title: "Finish taxes", text: "What is the next step to finishing Chloe's taxes?"))
+            mantras.append(Mantra.createMany(number: 5, title: "Car registration", text: "When are you going to reschedule and add emissions for the inspection"))
             mantras.append(Mantra.createMany(number: 5, title: "Wall painting", text: "What is the next step finishing wall repairs?"))
             mantras.append(Mantra.createMany(number: 5, title: "Network", text: "What are the next steps to grow my network?"))
             mantras.append(Mantra.createMany(number: 5, title: "Get yourself organized!", text: "What is the next step to organizing the bathroom dresser?"))
@@ -92,6 +92,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             mantras.append(Mantra.createMany(number: 5, title: "You are a mail", text: "When are you sorting through the pile of mail?"))
             mantras.append(Mantra.createMany(number: 2, title: "I should just write what I want", text: "What did I want to write here? I don't remember"))
             mantras.append(Mantra.createMany(number: 2, title: "This is for you!", text: "This app is your organization tool. Use it to guide your future self! Also please take the time to improve this; the payoff is exponential!"))
+            mantras.append(Mantra.createMany(number: 5, title: "You are an adult!", text: "What are the next steps for vaccination and food stamps?"))
+            mantras.append(Mantra.createMany(number: 5, title: "You are 30 now!", text: "When are you getting back to Barbara?"))
+            mantras.append(Mantra.createMany(number: 5, title: "You are a web developer!", text: "How will you set up a server to send notifications to your phone?"))
             
             for mantra in mantras {
                 notificationManager.Schedule(notifications: mantra, over: duration)
