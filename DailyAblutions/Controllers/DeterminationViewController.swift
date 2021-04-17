@@ -42,6 +42,11 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
         m_Mantras.append(Mantra.createMany(number: 5, title: "You are a good teammate", text: "How will I tackle the dummy answers? What other features do I want to add?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "You have a pudge ball to care for", text: "When are you shaving Chloe's fupa?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Manage your environment", text: "When are you terminating Steam?"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "Silence the voices", text: "All these notifications are achievable goals. Accomplish them and be rewarded"))
+        m_Mantras.append(Mantra.createMany(number: 2, title: "Happy accidents", text: "Can i wr-te a misztuk?"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "You date a pig!", text: "What are some date ideas for Chloe?"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "Give me something to do!", text: "What can you accomplish at home? What can you accomplish abroad?"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "Make time for things", text: "Do you have time to add to-dos to your calendar?"))
         
         m_NotificationManager = NotificationManager()
         super.init(rootView: rootView)
