@@ -106,6 +106,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             mantras.append(Mantra.createMany(number: 5, title: "You date a pig!", text: "What are some date ideas for Chloe?"))
             mantras.append(Mantra.createMany(number: 5, title: "Give me something to do!", text: "What can you accomplish at home? What can you accomplish abroad?"))
             mantras.append(Mantra.createMany(number: 5, title: "Make time for things", text: "Do you have time to add to-dos to your calendar?"))
+            mantras.append(Mantra.createMany(number: 5, title: "Your network is your net worth", text: "What features do you want to add to your network database app?"))
+            mantras.append(Mantra.createMany(number: 5, title: "Your pig is 480!!", text: "What features do you want to add to your flashcards app?"))
+            mantras.append(Mantra.createMany(number: 5, title: "It's the final week of project 2", text: "What features do I want to add for this final week?"))
+            mantras.append(Mantra.createMany(number: 5, title: "Minor little shit", text: "email kim, put saturday's shift up"))
             
             for mantra in mantras {
                 notificationManager.Schedule(notifications: mantra, over: duration)
