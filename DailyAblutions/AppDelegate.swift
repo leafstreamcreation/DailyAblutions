@@ -87,7 +87,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             mantras.append(Mantra.createMany(number: 5, title: "You are a mail", text: "When are you sorting through the pile of mail?"))
             mantras.append(Mantra.createMany(number: 2, title: "I should just write what I want", text: "What did I want to write here? I don't remember"))
             mantras.append(Mantra.createMany(number: 2, title: "This is for you!", text: "This app is your organization tool. Use it to guide your future self! Also please take the time to improve this; the payoff is exponential!"))
-            mantras.append(Mantra.createMany(number: 5, title: "You are an adult!", text: "What are the next steps for vaccination and food stamps?"))
             mantras.append(Mantra.createMany(number: 5, title: "You are 30 now!", text: "When are you getting back to Barbara?"))
             mantras.append(Mantra.createMany(number: 5, title: "You network good time", text: "What do you want to write to send to each ironhacker?"))
             mantras.append(Mantra.createMany(number: 5, title: "You have a list of repetitive chores", text: "What are they and how will you schedule them?"))
@@ -102,8 +101,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             mantras.append(Mantra.createMany(number: 5, title: "It's the final week of project 2", text: "What features do I want to add for this final week?"))
             mantras.append(Mantra.createMany(number: 5, title: "Just focus on the project!", text: "When are you going to shave Chloe's fupa next?"))
             mantras.append(Mantra.createMany(number: 5, title: "I need to poop", text: "When are you cleaning the mice sheddings in the closet?"))
-            mantras.append(Mantra.createMany(number: 5, title: "A subscription to hearing", text: "Schedule the next ear cleaning"))
-            mantras.append(Mantra.createMany(number: 5, title: "Follow it throuuuggghhh", text: "Hang the stairwell curtain again"))
+            mantras.append(Mantra.createMany(number: 5, title: "Get ahead", text: "Is there something you can get done right now?"))
+            mantras.append(Mantra.createMany(number: 5, title: "Your presence is important", text: "How will you curb your cannabis intake?"))
+            mantras.append(Mantra.createMany(number: 5, title: "Code activism into your environment", text: "When are you scheduling BLM posts for the family chat?"))
             
             for mantra in mantras {
                 notificationManager.Schedule(notifications: mantra, over: duration)
