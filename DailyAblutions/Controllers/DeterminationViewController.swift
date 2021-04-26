@@ -39,7 +39,6 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
         m_Mantras.append(Mantra.createMany(number: 5, title: "Make time for things", text: "Do you have time to add to-dos to your calendar?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Your network is your net worth", text: "What features do you want to add to your network database app?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Your pig is 480!!", text: "What features do you want to add to your flashcards app?"))
-        m_Mantras.append(Mantra.createMany(number: 5, title: "It's the final week of project 2", text: "What features do I want to add for this final week?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Just focus on the project!", text: "When are you going to shave Chloe's fupa next?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "I need to poop", text: "When are you cleaning the mice sheddings in the closet?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Get ahead", text: "Is there something you can get done right now?"))
