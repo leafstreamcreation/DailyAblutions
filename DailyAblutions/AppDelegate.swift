@@ -98,13 +98,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             mantras.append(Mantra.createMany(number: 5, title: "Make time for things", text: "Do you have time to add to-dos to your calendar?"))
             mantras.append(Mantra.createMany(number: 5, title: "Your network is your net worth", text: "What features do you want to add to your network database app?"))
             mantras.append(Mantra.createMany(number: 5, title: "Your pig is 480!!", text: "What features do you want to add to your flashcards app?"))
-            mantras.append(Mantra.createMany(number: 5, title: "Get this done!", text: "When are you going to shave Chloe's fupa next?"))
             mantras.append(Mantra.createMany(number: 5, title: "I need to poop", text: "When are you cleaning the mice sheddings in the closet?"))
             mantras.append(Mantra.createMany(number: 5, title: "Get ahead", text: "Is there something you can get done right now?"))
             mantras.append(Mantra.createMany(number: 5, title: "Your presence is important", text: "How will you curb your cannabis intake?"))
             mantras.append(Mantra.createMany(number: 5, title: "Code activism into your environment", text: "When are you scheduling BLM posts for the family chat?"))
-            mantras.append(Mantra.createMany(number: 5, title: "Look like a person", text: "Hygiene and grooming is a gift to yourself. When are you getting a haircut?"))
             mantras.append(Mantra.createMany(number: 5, title: "Arm yourself", text: "You need tools to support you in the hearing world - get some hearing aids! What is the next step?"))
+            mantras.append(Mantra.createMany(number: 5, title: "Angie drrrrrlllll", text: "Your sister needs a drill, so you can fix the towel rack"))
+            mantras.append(Mantra.createMany(number: 5, title: "Motherf*cker", text: "What are you doing about Mother's Day?"))
             
             for mantra in mantras {
                 notificationManager.Schedule(notifications: mantra, over: duration)
