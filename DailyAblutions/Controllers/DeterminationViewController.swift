@@ -28,10 +28,10 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
         m_Mantras.append(Mantra.createMany(number: 5, title: "Silence the voices", text: "All these notifications are achievable goals. Accomplish them and be rewarded"))
         m_Mantras.append(Mantra.createMany(number: 2, title: "Happy accidents", text: "Can i wr-te a misztuk?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Make time for things", text: "Do you have time to add to-dos to your calendar?"))
-        m_Mantras.append(Mantra.createMany(number: 5, title: "Code activism into your environment", text: "How will you call your family to action?"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "Code activism into your environment", text: "What are your goals for talking with family? (let's build something together?)"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Hearing is life support 🤷🏼‍♂️", text: "What are you looking for in hearing aids?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "∞ Feedback Loop ∞", text: "What new mantras do you want to integrate?"))
-        m_Mantras.append(Mantra.createMany(number: 5, title: "You are forged in flame", text: "You've been in a war for control of your life. Fight back."))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "You are forged in flame", text: "You're in a war for your life. Fight back"))
         
         
         m_NotificationManager = NotificationManager()
