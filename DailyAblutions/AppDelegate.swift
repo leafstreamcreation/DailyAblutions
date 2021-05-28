@@ -87,10 +87,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             mantras.append(Mantra.createMany(number: 5, title: "Silence the voices", text: "All these notifications are achievable goals. Accomplish them and be rewarded"))
             mantras.append(Mantra.createMany(number: 2, title: "Happy accidents", text: "Can i wr-te a misztuk?"))
             mantras.append(Mantra.createMany(number: 5, title: "Make time for things", text: "Do you have time to add to-dos to your calendar?"))
-            mantras.append(Mantra.createMany(number: 5, title: "Code activism into your environment", text: "What are your goals for talking with family? (let's build something together?)"))
+            mantras.append(Mantra.createMany(number: 5, title: "Code activism into your environment", text: "What are your goals for talking with family?"))
             mantras.append(Mantra.createMany(number: 5, title: "Hearing is life support 🤷🏼‍♂️", text: "What are you looking for in hearing aids?"))
             mantras.append(Mantra.createMany(number: 5, title: "∞ Feedback Loop ∞", text: "What new mantras do you want to integrate?"))
-            mantras.append(Mantra.createMany(number: 5, title: "You are forged in flame", text: "You're in a war for your life. Fight back"))
+            mantras.append(Mantra.createMany(number: 5, title: "You are forged in flame", text: "You're in a war for your soul. Fight back"))
+            mantras.append(Mantra.createMany(number: 5, title: "A policy for hearies", text: "Did they make space to accommodate you?"))
             
             for mantra in mantras {
                 notificationManager.Schedule(notifications: mantra, over: duration)

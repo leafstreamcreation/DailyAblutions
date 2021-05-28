@@ -31,6 +31,7 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
         m_Mantras.append(Mantra.createMany(number: 5, title: "Hearing is life support 🤷🏼‍♂️", text: "What are you looking for in hearing aids?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "∞ Feedback Loop ∞", text: "What new mantras do you want to integrate?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "You are forged in flame", text: "You're in a war for your life. Fight back"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "A policy for hearies", text: "Did they make space to accommodate you?"))
         
         
         m_NotificationManager = NotificationManager()
