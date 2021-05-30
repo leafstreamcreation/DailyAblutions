@@ -19,7 +19,7 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
         m_Mantras.append(Mantra.createMany(number: 2, title: "You are a Deaf feeder", text: "Why is it inappropriate for a hearie to comment on your hearing and speech?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "You have to keep things moving", text: "Have you checked your to do list?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Practice signing", text: "DAD/MOM, BRO/SIS, NEED/MUST, WANT, COOL, NOTHING, AUNT/UNCLE, SEE YOU LATER, HAVE, BOY/GIRL, LANGUAGE, PLACE, FOR, MEAN, FAMILY, CLASS"))
-        m_Mantras.append(Mantra.createMany(number: 5, title: "Get in touch with YOU", text: "Do you have a moment to breathe or meditate?"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "Get in touch with YOU", text: "Do you have a moment to breathe or meditate? Invite someone to join!"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Improve your organization", text: "What is your plan for getting more organized? Do you have a time scheduled to plan?"))
         m_Mantras.append(Mantra.createMany(number: 2, title: "I should just write what I want", text: "What did I want to write here? I don't remember"))
         m_Mantras.append(Mantra.createMany(number: 2, title: "This is for you!", text: "This app is your organization tool. Use it to guide your future self! Also please take the time to improve this; the payoff is exponential!"))
@@ -30,8 +30,12 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
         m_Mantras.append(Mantra.createMany(number: 5, title: "Code activism into your environment", text: "What are your goals for talking with family? (let's build something together?)"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Hearing is life support 🤷🏼‍♂️", text: "What are you looking for in hearing aids?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "∞ Feedback Loop ∞", text: "What new mantras do you want to integrate?"))
-        m_Mantras.append(Mantra.createMany(number: 5, title: "You are forged in flame", text: "You're in a war for your life. Fight back"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "You are forged in flame", text: "You're in a war for your soul. Fight back"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "A policy for hearies", text: "Did they make space to accommodate you?"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "Communicate your feelings", text: "It's important to let others know when you're feeling bad. How will you do it?"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "Ow, that hurts. Please stop", text: "The only one who knows you can't hear is you. Let them know when they aren't including you"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "Surfaces and Sinks", text: "Clean them. You naked ape"))
+        
         
         
         m_NotificationManager = NotificationManager()
