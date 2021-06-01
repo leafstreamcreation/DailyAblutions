@@ -34,7 +34,7 @@ class DeterminationViewController<Content> : UIHostingController<Content> where 
         m_Mantras.append(Mantra.createMany(number: 5, title: "A policy for hearies", text: "Did they make space to accommodate you?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Communicate your feelings", text: "It's important to let others know when you're feeling bad. How will you do it?"))
         m_Mantras.append(Mantra.createMany(number: 5, title: "Ow, that hurts. Please stop", text: "The only one who knows you can't hear is you. Let them know when they aren't including you"))
-        m_Mantras.append(Mantra.createMany(number: 5, title: "Surfaces and Sinks", text: "Clean them. You naked ape"))
+        m_Mantras.append(Mantra.createMany(number: 5, title: "Surfaces and Sinks", text: "Clean them!"))
         
         
         
